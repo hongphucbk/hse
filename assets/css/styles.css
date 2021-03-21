@@ -76,6 +76,10 @@ ul li {
           justify-content: space-between;
 }
 
+.header .navbar-light {
+  padding-bottom: 0.5rem;
+}
+
 .header .navbar-light .nav-item.active .nav-link,
 .header .navbar-light .nav-item:focus .nav-link,
 .header .navbar-light .nav-item:hover .nav-link {
@@ -85,21 +89,6 @@ ul li {
 .header .navbar-light .nav-item.active .nav-link::before,
 .header .navbar-light .nav-item:focus .nav-link::before,
 .header .navbar-light .nav-item:hover .nav-link::before {
-  opacity: 1;
-  width: 75%;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-}
-
-.header .navbar-light .nav-link.active,
-.header .navbar-light .nav-link:focus,
-.header .navbar-light .nav-link:hover {
-  color: #ffffff;
-}
-
-.header .navbar-light .nav-link.active::before,
-.header .navbar-light .nav-link:focus::before,
-.header .navbar-light .nav-link:hover::before {
   opacity: 1;
   width: 75%;
   -webkit-transition: all ease 0.3s;
@@ -125,7 +114,6 @@ ul li {
   color: #ffffff;
   position: relative;
   font-weight: 600;
-  margin-right: 15px;
 }
 
 .header .navbar-light .nav-item::before {
@@ -286,7 +274,7 @@ ul li {
 .footer .box .title {
   font-size: 20px;
   font-weight: 600;
-  margin: 8px 0 12px 0;
+  margin: 8px 0;
 }
 
 .footer .box .content li {
@@ -480,7 +468,7 @@ ul li {
 
 /*3. Course list*/
 .list-my-course {
-  min-height: calc(100vh - 270px);
+  min-height: 396px;
 }
 
 .list-my-course .title {
@@ -522,6 +510,15 @@ ul li {
 }
 
 /*4. Regiter Scourse*/
+.register-course .by-course {
+  min-height: 396px;
+}
+
+.register-course .title {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
 /*5. Learn Scourse (Vào  học)*/
 .learn-scourse .learn-content {
   padding-top: 20px;

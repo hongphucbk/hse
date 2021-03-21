@@ -67,6 +67,7 @@ ul li {
     }
 
     .navbar-light {
+        padding-bottom: 0.5rem;
         .nav-item.active,
         .nav-item:focus,
         .nav-item:hover {
@@ -77,17 +78,6 @@ ul li {
                     width: 75%;
                     transition: all ease 0.3s;
                 }
-            }
-        }
-
-        .nav-link.active,
-        .nav-link:focus,
-        .nav-link:hover {
-            color: #ffffff;
-            &::before {
-                opacity: 1;
-                width: 75%;
-                transition: all ease 0.3s;
             }
         }
 
@@ -110,7 +100,6 @@ ul li {
             color: #ffffff;
             position: relative;
             font-weight: 600;
-            margin-right: 15px;
             &::before {
                 position: absolute;
                 content: "";
@@ -260,9 +249,10 @@ ul li {
         .title {
             font-size: 20px;
             font-weight: 600;
-            margin: 8px 0 12px 0;
+            margin: 8px 0;
         }
         .content {
+           
             li {
                 line-height: 2rem;
                 font-size: 15px;
@@ -465,8 +455,7 @@ ul li {
 
 /*3. Course list*/
 .list-my-course {
-    min-height: calc(100vh - 270px);
-
+    min-height: 396px;
     .title {
         margin-bottom: 25px;
         margin-top: 10px;
@@ -505,12 +494,16 @@ ul li {
 }
 
 /*4. Regiter Scourse*/
-// .register-course {
-//     .title {
-//         margin: 25px 0;
-//         color: #0086c4;
-//     }
-// }
+.register-course {
+    .by-course {
+        min-height: 396px;
+    }
+
+    .title {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+}
 
 /*5. Learn Scourse (Vào  học)*/
 .learn-scourse {
