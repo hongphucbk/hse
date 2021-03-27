@@ -160,12 +160,29 @@ ul li {
         
         .info-user {
             padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
             .avatar-user {
                 width: 35px;
                 height: 35px;
                 border-radius: 50%;
                 border: 1px solid #d8d8d8;
             }
+
+            .avatar-user-default {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid #d8d8d8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                i {
+                    color: #0086c4
+                }
+            }
+
             .name-user {
                 color: #ffffff;
                 font-size: 15px;
@@ -786,7 +803,7 @@ ul li {
 
 /*3. Course list*/
 .list-my-course {
-    min-height: 396px;
+    min-height: calc(100vh - 263px);
     margin-top: 30px;
     .title {
         margin-bottom: 25px;
@@ -816,10 +833,11 @@ ul li {
 
 /*5. Learn Scourse (Vào  học)*/
 .learn-scourse {
- 
     .learn-content {
         margin-top: 30px;
         margin-bottom: 30px;
+        min-height: calc(100vh - 293px);
+
         .content {
             margin-bottom: 30px;
         }
@@ -944,16 +962,19 @@ ul li {
         top: 0;
         width: 100%;
         z-index: 5;
+        margin-bottom: 5px;
     }
 
     .content-video-wrapper {
-        margin-top: 67px;
+        // margin-left: 30px;
+        // margin-right: 30px;
+        margin-top: 72px;
         overflow: hidden;
 
         .video-wrapper {
             padding: 0!important;
             width: 100%;
-            max-height: calc(100vh - 67px);
+            max-height: calc(100vh - 72px);
             overflow-y: auto;
 
             #session-test {
@@ -1167,7 +1188,7 @@ ul li {
 
         .table-of-content {
             padding-left: 0!important;
-            height: calc(100vh - 67px);
+            height: calc(100vh - 72px);
             overflow: hidden;
             position: relative;
             background-color: #dddddd6b;
@@ -1176,10 +1197,9 @@ ul li {
                 position: fixed;
                 top: 0;
                 right: 0;
-                margin-top: 67px;
+                margin-top: 72px;
                 width: 32.9%!important;
-                border-top: 1px solid #d8d8d8;
-                height: calc(100vh - 67px);
+                height: calc(100vh - 72px);
                 overflow: auto;
             }
         }
@@ -1570,7 +1590,7 @@ ul li {
     
                .avatar-user {
                 //    display: none;
-                width: 30px;
+                width: 35px;
                 height: 30px;
                }
 

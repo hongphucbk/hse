@@ -186,6 +186,12 @@ ul li {
 
 .header .navbar-light .info-user {
   padding: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .navbar-light .info-user .avatar-user {
@@ -193,6 +199,27 @@ ul li {
   height: 35px;
   border-radius: 50%;
   border: 1px solid #d8d8d8;
+}
+
+.header .navbar-light .info-user .avatar-user-default {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+.header .navbar-light .info-user .avatar-user-default i {
+  color: #0086c4;
 }
 
 .header .navbar-light .info-user .name-user {
@@ -896,7 +923,7 @@ ul li {
 
 /*3. Course list*/
 .list-my-course {
-  min-height: 396px;
+  min-height: calc(100vh - 263px);
   margin-top: 30px;
 }
 
@@ -927,6 +954,7 @@ ul li {
 .learn-scourse .learn-content {
   margin-top: 30px;
   margin-bottom: 30px;
+  min-height: calc(100vh - 293px);
 }
 
 .learn-scourse .learn-content .content {
@@ -1066,17 +1094,18 @@ ul li {
   top: 0;
   width: 100%;
   z-index: 5;
+  margin-bottom: 5px;
 }
 
 .list-of-lessions .content-video-wrapper {
-  margin-top: 67px;
+  margin-top: 72px;
   overflow: hidden;
 }
 
 .list-of-lessions .content-video-wrapper .video-wrapper {
   padding: 0 !important;
   width: 100%;
-  max-height: calc(100vh - 67px);
+  max-height: calc(100vh - 72px);
   overflow-y: auto;
 }
 
@@ -1320,7 +1349,7 @@ ul li {
 
 .list-of-lessions .content-video-wrapper .table-of-content {
   padding-left: 0 !important;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 72px);
   overflow: hidden;
   position: relative;
   background-color: #dddddd6b;
@@ -1330,10 +1359,9 @@ ul li {
   position: fixed;
   top: 0;
   right: 0;
-  margin-top: 67px;
+  margin-top: 72px;
   width: 32.9% !important;
-  border-top: 1px solid #d8d8d8;
-  height: calc(100vh - 67px);
+  height: calc(100vh - 72px);
   overflow: auto;
 }
 
@@ -1672,7 +1700,7 @@ ul li {
     margin-left: 0;
   }
   .header .navbar-light .nav-item .nav-link .avatar-user {
-    width: 30px;
+    width: 35px;
     height: 30px;
   }
   .header .navbar-light .nav-item .nav-link .name-user {
