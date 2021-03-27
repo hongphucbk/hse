@@ -1,0 +1,1902 @@
+@charset "UTF-8";
+/*
+    Theme Name: 
+    Theme Description: 
+    Author: Nguyen Dinh Trieu
+    Version: 1.0.0
+*/
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*
+ =================== Table Of Content ===================
+ 1. Feature class
+ 2. Form Login & Register
+ 3. List Course (Đăng nhập thành công)
+ 4. Regiter Scourse (Đăng kí khóa học)
+ 5. Learn Scourse (Vào  học)
+ 6. List of lessions
+ 7. Register source detail
+*/
+/*1. Feature class*/
+/*Header*/
+.header {
+  background: #0086c4;
+  color: #ffffff;
+}
+
+.header .logo {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  background: white;
+}
+
+.header .logo .img-logo {
+  width: 220px;
+}
+
+.header .nav-custom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navbar-light {
+  padding-bottom: 0.5rem;
+}
+
+.header .navbar-light .nav-item.active .nav-link,
+.header .navbar-light .nav-item:focus .nav-link,
+.header .navbar-light .nav-item:hover .nav-link {
+  color: #ffffff;
+}
+
+.header .navbar-light .nav-item.active .nav-link::before,
+.header .navbar-light .nav-item:focus .nav-link::before,
+.header .navbar-light .nav-item:hover .nav-link::before {
+  opacity: 1;
+  width: 75%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.header .navbar-light .fa-bars {
+  color: #fff !important;
+}
+
+.header .navbar-light .navbar-toggler {
+  border-color: white;
+  color: #000;
+}
+
+.header .navbar-light .navbar-toggler .fa-bars {
+  color: #000;
+}
+
+.header .navbar-light .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  position: relative;
+  font-weight: 600;
+}
+
+.header .navbar-light .nav-item::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.header .navbar-light .nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  position: relative;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.header .navbar-light .nav-link::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.header .navbar-light .dropdown .nav-link {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.header .navbar-light .dropdown .nav-link::before {
+  display: none;
+}
+
+.header .navbar-light .info-user {
+  padding: 0.5rem 0;
+}
+
+.header .navbar-light .info-user .avatar-user {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
+}
+
+.header .navbar-light .info-user .name-user {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 7px;
+}
+
+.header .navbar-light .dropdown-info .dropdown-item {
+  font-size: 15px;
+}
+
+/**/
+/*Item Course*/
+.item-scourse-wp {
+  margin-bottom: 25px;
+}
+
+.item-scourse-wp .item {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  position: relative;
+}
+
+.item-scourse-wp .item:hover {
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item-scourse-wp .item:hover .course-title {
+  color: #0086c4 !important;
+}
+
+.item-scourse-wp .item:hover .img-scourse-wp img {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.item-scourse-wp .item a {
+  text-decoration: none;
+}
+
+.item-scourse-wp .item .img-scourse-wp {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.item-scourse-wp .item .img-scourse-wp img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.item-scourse-wp .item .srource-info {
+  padding: 10px 20px 20px 20px;
+}
+
+.item-scourse-wp .item .srource-info .course-title {
+  line-clamp: 2;
+  overflow: hidden;
+  color: #29303b;
+  line-height: 1.4;
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+
+.item-scourse-wp .item .srource-info .sub-info {
+  color: #686f7a;
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.item-scourse-wp .item .srource-info .sub-info i {
+  margin-right: 4px;
+  font-size: 13px;
+}
+
+.item-scourse-wp .item .srource-info .sub-info.name {
+  margin-right: 20px;
+}
+
+.item-scourse-wp .item .srource-info .sub-title {
+  color: #686f7a;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-bottom: 5px;
+}
+
+.item-scourse-wp .item .srource-info .box-scource-ft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-scourse-wp .item .srource-info .box-scource-ft .box-info-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item-scourse-wp .item .srource-info .box-scource-ft .btn-regi {
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-scourse-wp .item .srource-info .box-scource-ft .btn-hover::before {
+  border-radius: 3px;
+}
+
+.item-scourse-wp .item .icon-scourse {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.item-scourse-wp .item .icon-scourse i {
+  font-size: 16px;
+  color: #0086c4;
+}
+
+.return-home {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.return-home:hover {
+  color: #0086c4 !important;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+/*Category*/
+.category {
+  margin-bottom: 20px;
+}
+
+.category .sidebar-wp {
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 20px 15px;
+}
+
+.category .sidebar-wp .box-sidebar {
+  padding: 10px 0;
+}
+
+.category .sidebar-wp .box-sidebar .title-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #31a4d9eb;
+  cursor: pointer;
+}
+
+.category .sidebar-wp .box-sidebar .title-sb .icon-tt {
+  width: 42px;
+  height: 30px;
+  background-color: #31a4d9eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.category .sidebar-wp .box-sidebar .title-sb .icon-tt i {
+  color: white;
+  font-size: 18px;
+}
+
+.category .sidebar-wp .box-sidebar .title-sb .name-tt {
+  font-size: 19px;
+  margin-left: 15px;
+  color: #555;
+}
+
+.category .sidebar-wp .box-sidebar .category-list {
+  margin-top: 10px;
+}
+
+.category .sidebar-wp .box-sidebar .category-list .item-cate {
+  margin-left: 20px;
+  margin-right: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d8d8d8;
+  cursor: pointer;
+  color: #555;
+}
+
+.category .sidebar-wp .box-sidebar .category-list .item-cate:hover {
+  color: #0086c4;
+}
+
+.category .sidebar-wp .box-sidebar .category-list .item-cate:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+/*Button hover*/
+.btn-hover {
+  background: #31a4d9eb;
+  outline: none;
+  border: none;
+  position: relative;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  z-index: 1;
+}
+
+.btn-hover::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0086c4;
+  opacity: 0;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  z-index: -1;
+}
+
+.btn-hover:hover::before {
+  opacity: 1;
+  width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.btn-hover a {
+  color: #ffffff;
+}
+
+/*Top heading*/
+.top-heading .title-heading {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0086c4;
+  margin-bottom: 15px;
+}
+
+.top-heading .search {
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #d8d8d8;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2px 15px;
+}
+
+.top-heading .search .input {
+  border: none;
+  outline: none;
+  padding: 2px 5px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.top-heading .search i {
+  color: #555555b3;
+}
+
+/*Pagination*/
+.pagination {
+  margin-bottom: 20px;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+}
+
+.pagination ul li {
+  width: 40px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  border: 1px solid #d8d8d83d;
+}
+
+.pagination ul li i {
+  font-size: 13px;
+  color: #555;
+}
+
+.pagination ul li:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.pagination ul li:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.pagination ul .active {
+  background-color: #0086c4;
+  color: #fff;
+}
+
+/*Footer*/
+.footer-wp {
+  background: #0086c4;
+}
+
+.footer-wp .footer {
+  color: #ffffff;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.footer-wp .footer .logo-ft {
+  width: 320px;
+  background: white;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
+}
+
+.footer-wp .footer .logo-ft .img-logo {
+  width: 300px;
+  height: 45px;
+}
+
+.footer-wp .footer .box .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-wp .footer .box .content {
+  margin-top: 5px;
+}
+
+.footer-wp .footer .box .content li {
+  line-height: 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer-wp .copy-right {
+  background: #e6e6e9f2;
+  color: #0086c4;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+/**/
+.table-of-content .list-lession .lession {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #0000000d;
+  border-bottom: 1px solid #d8d8d8;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.table-of-content .list-lession .lession:hover {
+  background-color: #0086c4;
+  color: #fff;
+}
+
+.table-of-content .list-lession .lession:hover .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.table-of-content .list-lession .lession:hover .time {
+  font-size: 15px;
+}
+
+.table-of-content .list-lession .lession .name {
+  font-size: 16px;
+}
+
+.table-of-content .list-lession .lession .time {
+  font-size: 15px;
+}
+
+.table-of-content .list-lession .lession.active {
+  background-color: #0086c4;
+  color: #fff;
+}
+
+.table-of-content .list-lession .lession.active .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.table-of-content .list-lession .lession.active .time {
+  font-size: 15px;
+}
+
+/*2. Form Login & Regiter*/
+.login-regiter .modal-custom .modal-content {
+  border: none;
+  border-radius: 9px;
+  margin-top: 50px;
+}
+
+.login-regiter .modal-custom .modal-content .form-sign-up .field-wrap {
+  margin-bottom: 15px !important;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form {
+  max-width: 600px;
+  margin: 15px auto;
+  color: #000;
+  padding: 0 20px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content label {
+  position: absolute;
+  left: 13px;
+  color: #333333c2;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content label .req {
+  margin: 2px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content label.active {
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  left: 2px;
+  font-size: 14px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content label.active .req {
+  opacity: 0;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content .button {
+  border: 0;
+  outline: none;
+  border-radius: 9px;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #38aae6;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content .button-block {
+  display: block;
+  width: 100%;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content input {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  border-radius: 9px;
+  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .form .tab-content input:focus {
+  outline: 0;
+  border-color: #38aae6;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-form-active {
+  color: #555;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup {
+  text-decoration: none;
+  color: #555;
+  border-bottom: 1px solid #999999;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  font-size: 16px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup:hover {
+  color: #38aae6;
+  border-bottom: 1px solid #38aae6;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-forgot {
+  text-decoration: none;
+  color: red;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .tab-content > div:last-child {
+  display: none;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .field-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.login-regiter .modal-custom .modal-content .content-form .top-row > div:last-child {
+  margin: 0;
+}
+
+/*3. Course list*/
+.list-my-course {
+  min-height: 396px;
+  margin-top: 30px;
+}
+
+.list-my-course .title {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+/*4. Regiter Scourse*/
+.register-course .by-course {
+  min-height: 396px;
+}
+
+.register-course .by-course .btn-register {
+  border: none;
+  outline: none;
+  border: 1px solid #d8d8d8;
+  background-color: #0086c4;
+  padding: 4px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/*5. Learn Scourse (Vào  học)*/
+.learn-scourse .learn-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.learn-scourse .learn-content .content {
+  margin-bottom: 30px;
+}
+
+.learn-scourse .learn-content .title {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.learn-scourse .learn-content .title .return-home {
+  color: #000;
+}
+
+.learn-scourse .learn-content .name-scourse {
+  font-weight: 900;
+  padding-top: 15px;
+}
+
+.learn-scourse .learn-content .col-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.learn-scourse .learn-content .sub-name {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.learn-scourse .learn-content .text-normal {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.learn-scourse .learn-content .text-normal .item-note {
+  line-height: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.learn-scourse .learn-content .text-normal .item-note .fa-check {
+  color: #0086c4;
+  font-size: 13px;
+  margin-right: 17px;
+  margin-left: 5px;
+}
+
+.learn-scourse .learn-content .start-video {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.learn-scourse .learn-content .start-video a {
+  text-decoration: none;
+}
+
+.learn-scourse .learn-content .start-video .img-video {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+}
+
+.learn-scourse .learn-content .start-video .img-video img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.learn-scourse .learn-content .start-video .img-video .icon-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.learn-scourse .learn-content .start-video .fa-play-circle {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.learn-scourse .learn-content .start-video .source-info {
+  padding: 10px 15px;
+}
+
+.learn-scourse .learn-content .start-video .source-info ul {
+  width: 190px;
+  margin: 0 auto;
+  padding-left: 12px;
+}
+
+.learn-scourse .learn-content .start-video .source-info ul li {
+  line-height: 1.8rem;
+  font-size: .875rem;
+  color: #494949;
+}
+
+.learn-scourse .learn-content .start-video .source-info .btn-start {
+  padding: 9px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.learn-scourse .learn-content .start-video .source-info .btn-start::before {
+  border-radius: 10px;
+}
+
+/*6. List of lessions*/
+.list-of-lessions {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-of-lessions .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.list-of-lessions .content-video-wrapper {
+  margin-top: 67px;
+  overflow: hidden;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper {
+  padding: 0 !important;
+  width: 100%;
+  max-height: calc(100vh - 67px);
+  overflow-y: auto;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test {
+  height: 450px;
+  width: 100%;
+  padding: 10px 37px 10px 50px;
+  background: #000;
+  position: relative;
+  display: none;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test {
+  display: revert !important;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test {
+  margin-bottom: 15px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test .question {
+  margin-bottom: 10px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test .answer {
+  margin: 0 15px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test ul li input[type=checkbox] {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test .input-answer {
+  border: none;
+  border-bottom: 1px solid #d8d8d8;
+  outline: none;
+  width: 100%;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .btn-change-question {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1px;
+  margin-right: 10px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .btn-change-question button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .btn-change-question .btn-hover::before {
+  border-radius: 3px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn {
+  display: none;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn {
+  display: revert !important;
+  height: 450px;
+  width: 100%;
+  padding: 0 37px 0 50px;
+  background: #000;
+  line-height: 0;
+  position: relative;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn:hover .title-name {
+  opacity: 0.8;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .video {
+  height: 450px;
+  width: 100%;
+  outline: none !important;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 60px;
+  color: #fff;
+  font-weight: 600;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  z-index: 2;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name i {
+  margin-right: 10px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name .icon-return {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name .icon-return i {
+  font-size: 16px;
+  color: #0086c4;
+  margin-right: 0;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-right: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video button {
+  width: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video .btn-hover::before {
+  border-radius: 5px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video.right {
+  right: 0;
+  margin-right: 20px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video.left {
+  left: 0;
+  margin-left: 30px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information {
+  padding-top: 20px;
+  background: white;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs {
+  padding: 0 55px;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
+  padding: 0.5rem 1.5rem !important;
+  color: #000;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link.active {
+  color: #0086c4;
+  font-weight: 600;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .menu-respone {
+  display: none;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content {
+  margin: 15px 30px 15px 55px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content::-webkit-scrollbar {
+  display: none;
+}
+
+.list-of-lessions .content-video-wrapper .table-of-content {
+  padding-left: 0 !important;
+  height: calc(100vh - 67px);
+  overflow: hidden;
+  position: relative;
+  background-color: #dddddd6b;
+}
+
+.list-of-lessions .content-video-wrapper .table-of-content .list-lession {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 67px;
+  width: 32.9% !important;
+  border-top: 1px solid #d8d8d8;
+  height: calc(100vh - 67px);
+  overflow: auto;
+}
+
+.tabs-information .tab-content .table-of-content {
+  display: none;
+}
+
+/*7. Register source detail*/
+.modal-regiter-scource .modal-content .modal-header {
+  text-align: center;
+  border-bottom: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.modal-regiter-scource .modal-content .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-regiter-scource .modal-content .modal-body {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.modal-regiter-scource .modal-content .modal-body label {
+  position: absolute;
+  left: 13px;
+  color: #333333c2;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.modal-regiter-scource .modal-content .modal-body label .req {
+  margin: 2px;
+}
+
+.modal-regiter-scource .modal-content .modal-body label.active {
+  -webkit-transform: translateY(-40px);
+  transform: translateY(-40px);
+  left: 2px;
+  font-size: 14px;
+}
+
+.modal-regiter-scource .modal-content .modal-body label.active .req {
+  opacity: 0;
+}
+
+.modal-regiter-scource .modal-content .modal-body input {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  border-radius: 9px;
+  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
+}
+
+.modal-regiter-scource .modal-content .modal-body input:focus {
+  outline: 0;
+  border-color: #38aae6;
+}
+
+.modal-regiter-scource .modal-content .modal-body .field-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .field-wrap:last-child {
+  margin-bottom: 0px;
+}
+
+.modal-regiter-scource .modal-content .modal-footer {
+  border-top: 0;
+}
+
+.toast-regiter {
+  width: 250px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  font-size: 15px;
+}
+
+.toast-regiter .toast-body {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toast-regiter .toast-body .icon-success {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #10b410;
+  margin-right: 10px;
+}
+
+.toast-regiter .toast-body .icon-success i {
+  color: #fff;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .category .sidebar-wp {
+    margin-right: 0;
+  }
+  .item-scourse-wp .item .srource-info .box-scource-ft .box-info-left {
+    display: revert;
+  }
+  .learn-scourse .learn-content .content {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header .navbar-light .navbar-nav {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .list-of-lessions .content-video-wrapper .table-of-content {
+    display: none;
+    height: 100% !important;
+  }
+  .tabs-information .menu-respone {
+    display: revert !important;
+  }
+  .tabs-information .tab-content .table-of-content {
+    display: none;
+    background-color: #dddddd6b;
+  }
+  .tabs-information .tab-content .table-of-content .list-lession {
+    width: 100% !important;
+    margin-top: 0 !important;
+    height: 100% !important;
+    position: relative !important;
+    border-top: 1px solid #d8d8d8;
+  }
+  .tabs-information .tab-content .active.table-of-content {
+    display: revert !important;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .btn-change-video {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .learn-scourse .learn-content .text-normal .item-note {
+    line-height: 1.5;
+  }
+  .learn-scourse .learn-content .text-normal .item-note .fa-check {
+    margin-right: 13px;
+  }
+  .learn-scourse .learn-content .name-scourse {
+    font-size: 25px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test {
+    padding-left: 40px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn {
+    padding-left: 40px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs {
+    padding-left: 40px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content {
+    margin-left: 40px;
+  }
+  .footer-wp .footer .box .title {
+    padding-top: 10px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name {
+    height: auto;
+    margin-left: 45px;
+    white-space: nowrap;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header .logo {
+    width: 220px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .header .logo .img-logo {
+    width: 200px;
+  }
+  .list-my-course {
+    margin-top: 15px;
+  }
+  .top-heading .title-heading {
+    margin-bottom: 10px;
+  }
+  .footer-wp .footer .box .title {
+    font-size: 18px;
+    padding-top: 5px;
+  }
+  .footer-wp .footer .box .content li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .item-scourse-wp .item .srource-info .box-scource-ft .box-info-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .item-scourse-wp .sub-wp {
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .item-scourse-wp .sub-wp .sub-title:first-child {
+    margin-right: 50px;
+  }
+  .learn-scourse .learn-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .learn-scourse .learn-content .content {
+    margin-bottom: 20px;
+  }
+  .learn-scourse .learn-content .name-scourse {
+    font-size: 23px;
+    padding-top: 9px;
+  }
+  .learn-scourse .learn-content .sub-name {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .learn-scourse .learn-content .col-title {
+    font-size: 18px;
+  }
+  .learn-scourse .learn-content .text-normal .item-note {
+    font-size: 15px;
+  }
+  .learn-scourse .learn-content .text-normal .item-note .fa-check {
+    font-size: 12px;
+  }
+  .list-of-lessions .content-video-wrapper {
+    margin-top: 59px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test {
+    font-size: 15px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn {
+    height: 410px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .video {
+    height: 410px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test {
+    height: 410px;
+  }
+  .table-of-content .list-lession .lession {
+    padding: 13px  20px;
+  }
+  .table-of-content .list-lession .lession.active .name {
+    font-size: 15px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
+    padding: 0.4rem 1.25rem !important;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content {
+    font-size: 15px;
+  }
+  .footer-wp .footer .box .content {
+    margin-top: 0;
+  }
+  .footer-wp .footer .logo-ft {
+    margin-bottom: 5px;
+  }
+  .footer-wp .footer .logo-ft .img-logo {
+    width: 280px;
+    height: 40px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name {
+    height: auto;
+    margin-left: 35px;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header .logo {
+    width: 205px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .header .logo .img-logo {
+    width: 185px;
+  }
+  .header .navbar-light .nav-item {
+    margin: 0;
+  }
+  .header .navbar-light .nav-item:first-child {
+    margin-right: 10px !important;
+  }
+  .header .navbar-light .nav-item .nav-link {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .header .navbar-light .nav-item .nav-link .avatar-user {
+    width: 30px;
+    height: 30px;
+  }
+  .header .navbar-light .nav-item .nav-link .name-user {
+    margin-left: 5px;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute !important;
+  }
+  .learn-scourse .learn-content .title {
+    font-size: 15px;
+  }
+  .learn-scourse .learn-content .title .return-home {
+    font-size: 15px;
+  }
+  .learn-scourse .learn-content .name-scourse {
+    font-size: 20px;
+  }
+  .learn-scourse .learn-content .col-title {
+    font-size: 16px;
+  }
+  .list-of-lessions .content-video-wrapper {
+    margin-top: 56px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test {
+    margin-bottom: 5px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test {
+    padding: 15px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test .question {
+    margin-bottom: 5px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-test.show-test .take-a-test .item-test ul li {
+    margin-bottom: 0;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information {
+    padding-top: 25px;
+  }
+  .item-scourse-wp .item .srource-info {
+    padding-bottom: 13px;
+    padding-top: 5px;
+  }
+  .item-scourse-wp .item .srource-info .sub-title {
+    margin-bottom: 0;
+  }
+  .item-scourse-wp .item .srource-info .course-title {
+    margin-bottom: 0;
+  }
+  .item-scourse-wp .sub-wp {
+    margin-top: 0px;
+  }
+  .modal-regiter-scource .modal-content .modal-header .modal-title {
+    font-size: 17px;
+  }
+  .modal-regiter-scource .modal-content .modal-body input {
+    font-size: 15px;
+  }
+  .category .sidebar-wp {
+    padding: 10px 15px;
+  }
+  .category .sidebar-wp .box-sidebar .title-sb .icon-tt {
+    width: 38px;
+    height: 27px;
+  }
+  .category .sidebar-wp .box-sidebar .title-sb .icon-tt i {
+    font-size: 16px;
+  }
+  .category .sidebar-wp .box-sidebar .title-sb .name-tt {
+    font-size: 18px;
+  }
+  .category .sidebar-wp .box-sidebar .category-list {
+    margin-top: 5px;
+  }
+  .category .sidebar-wp .box-sidebar .category-list .item-cate {
+    padding: 7px 0;
+    font-size: 15px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn .title-name {
+    height: auto;
+    margin-left: 30px;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content .title {
+    font-size: 17px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content input {
+    font-size: 15px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content .button-block {
+    font-size: 16px;
+    padding: 9px 0;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .tab-form-active {
+    font-size: 15px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header .navbar-light .navbar-nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .toast.toast-regiter {
+    display: none;
+  }
+  .toast.toast-regiter.show {
+    display: revert !important;
+  }
+  .item-scourse-wp .item .srource-info .box-scource-ft .box-info-left {
+    display: block;
+  }
+  .item-scourse-wp .sub-wp {
+    display: block;
+  }
+  .learn-scourse .learn-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .learn-scourse .learn-content .title .return-home {
+    font-size: 14px;
+  }
+  .learn-scourse .learn-content .name-scourse {
+    font-size: 17px;
+    padding-top: 5px;
+    margin-bottom: 0;
+  }
+  .learn-scourse .learn-content .sub-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .learn-scourse .learn-content .col-title {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .learn-scourse .learn-content .text-normal .item-note {
+    font-size: 14px;
+  }
+  .learn-scourse .learn-content .text-normal .item-note .fa-check {
+    font-size: 10px;
+    margin-right: 9px;
+  }
+  .learn-scourse .learn-content .start-video .img-video {
+    height: 170px;
+  }
+  .learn-scourse .learn-content .start-video .fa-play-circle {
+    font-size: 45px;
+  }
+  .learn-scourse .learn-content .start-video .source-info .btn-start {
+    padding: 7px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 15px;
+  }
+  .learn-scourse .learn-content .start-video .source-info ul li {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .learn-scourse .learn-content .start-video .source-info ul li i {
+    font-size: 12px;
+    margin-right: 10px !important;
+  }
+  .footer-wp .footer .logo-ft {
+    width: 100%;
+  }
+  .footer-wp .footer .logo-ft .img-logo {
+    width: 240px;
+  }
+  .item-scourse-wp .item .img-scourse-wp {
+    height: 150px;
+  }
+  .item-scourse-wp .item .srource-info .course-title {
+    font-size: 16px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs {
+    padding: 0 5px !important;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
+    padding: 0.3rem 1rem !important;
+    font-size: 15px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn {
+    padding: 0 30px;
+  }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content {
+    margin: 15px;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content .title {
+    font-size: 15px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content input {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .field-wrap {
+    margin-bottom: 20px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content label.active {
+    font-size: 12px;
+    -webkit-transform: translateY(-33px);
+            transform: translateY(-33px);
+  }
+  .login-regiter .modal-custom .modal-content .content-form .form .tab-content .button-block {
+    padding: 6px 0;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .tab-form-active {
+    font-size: 14px;
+  }
+  .login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

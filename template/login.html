@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <a class="login-trigger" href="#" data-target="#form-login" data-toggle="modal">Login & Regiser</a>
+
+    <div id="form-login" class="login-regiter modal fade" role="dialog">
+        <div class="modal-dialog modal-custom">
+            <div class="modal-content">
+                <div class="modal-body content-form">
+                    <button data-dismiss="modal" class="close">&times;</button>
+                    <div class="form login-signup-reset">
+                        <div class="tab-content">
+                            <div class="form-active" id="login">
+                                <h5 class="title">ĐĂNG NHẬP</h5>
+                                <form action="" method="post">
+                                    <div class="field-wrap">
+                                        <label class="label-input">
+                                            Email<span class="req">*</span>
+                                        </label>
+                                        <input id="email" name="username" type="email" required autocomplete="off" />
+                                    </div>
+    
+                                    <div class="field-wrap">
+                                        <label class="label-input">
+                                            Password<span class="req">*</span>
+                                        </label>
+                                        <input type="password" name="password" id="password" required autocomplete="off" />
+                                    </div>
+    
+                                    <input in="Login" type="submit" name="button" value="ĐĂNG NHẬP" class="button button-block">
+                                    <!-- <button name="button" class="button button-block">Log In</button> -->
+                                    <div class="tab-form-active text-center">Bạn chưa có tài khoản? <a class="btn-signup" href="#signup">Đăng kí mới</a></div>
+                                    <div class="tab-form-active text-center"><a href="#reset" class="btn-forgot">Quên mật khẩu</a></div>
+                                </form>
+                            </div>
+
+                            <div id="signup" class="form-sign-up form-active" style="display: none">
+                                <h5 class="title">ĐĂNG KÍ</h5>
+                                <form action="" method="post">
+                                    <div class="top-row">
+                                        <div class="field-wrap row-custom">
+                                            <!-- <label class="label-input">
+                                                Tên<span class="req">*</span>
+                                            </label> -->
+                                            <input type="text" placeholder="Tên *" name="firstname" required autocomplete="off" />
+                                        </div>
+    
+                                        <div class="field-wrap">
+                                            <input type="text" placeholder="Họ *" name="lastname" required autocomplete="off" />
+                                        </div>
+                                    </div>
+    
+                                    <div class="field-wrap">
+                                        <input type="email" name="email" placeholder="Email *" required autocomplete="off" />
+                                    </div>
+
+                                    <div class="field-wrap" style="margin-bottom: 35px">
+                                        <input type="password" placeholder="Mật khẩu *" required autocomplete="off" />
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <input type="text" name="birthday" placeholder="CMND *" required autocomplete="off" />
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <input type="text" name="birthday" placeholder="Ngày/tháng/năm sinh *" required autocomplete="off" />
+                                    </div>
+
+                                    <div class="field-wrap">
+                                        <input type="text" name="workUnit" placeholder="Đơn vị công tác *" required autocomplete="off" />
+                                    </div>
+
+                                    <div class="top-row">
+                                        <div class="field-wrap">
+                                            <input type="text" placeholder="Ngày vào làm *" name="dateWork" required autocomplete="off" />
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input type="text" placeholder="Chức vụ *" name="position" required autocomplete="off" />
+                                        </div>
+                                    </div>
+    
+                                    <button type="submit" name="register" class="button button-block" />ĐĂNG KÍ</button>
+                                    <div class="tab-form-active text-center">Bạn có tài khoản? <a class="btn-signup" href="#login">Đăng nhập</a></div>
+    
+                                </form>
+                            </div>
+
+                            <div id="reset" style="display: none">
+                                <h5 class="title">LẤY LẠI MẬT KHẨU</h5>
+                                <form action="" method="post">
+                                    <div class="field-wrap">
+                                        <label class="label-input">
+                                            Địa chỉ Email bạn đã đăng kí<span class="req">*</span>
+                                        </label>
+                                        <input id="email" name="username" type="email" required autocomplete="off" />
+                                    </div>
+    
+                                    <input in="reset" type="submit" name="button" value="GỬI MẬT KHẨU" class="button button-block">
+                                    <!-- <button name="button" class="button button-block">Log In</button> -->
+                                    <div class="tab-form-active text-center">Bạn chưa có tài khoản? <a class="btn-signup" href="#signup">Đăng kí mới</a></div>
+                                </form>
+                            </div>
+
+                        </div><!-- tab-content -->
+                    </div> <!-- /form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Jquery js file -->
+    <script src="../assets/js/jquery.3.6.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

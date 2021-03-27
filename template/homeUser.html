@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+   <!-- Bootstrap css file -->
+   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+   <!-- Font Awesome icons -->
+   <link href="../assets/css/all.css" rel="stylesheet">
+
+   <!-- custom css file -->
+   <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="course-list-wp">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand logo" href="#">
+                    <img class="img-logo" src="../assets/images/logo-atld.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color:#ffffff;" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar-nav nav-custom">
+                      <div style="display: flex; align-items: center;">
+                            <div class="nav-item active">
+                                <a class="nav-link link-custom" href="homeUser.html">Trang chủ<span class="sr-only">(current)</span></a>
+                            </div>
+                            <div class="nav-item ">
+                                <a class="nav-link link-custom" href="regiterScourse.html">Đăng kí khóa học</a>
+                            </div>
+                      </div>
+
+                        <div class="nav-item dropdown dropdown-info">
+                            <a class="nav-link dropdown-toggle info-user" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="avatar-user" src="https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg" alt="" srcset="">
+                                    <span class="name-user">Nguyễn Đình Triều</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container list-my-course">
+            <div class="row top-heading">
+                <div class="title-heading col-md-6 col-lg-8">Danh sách khóa học của bạn</div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="search">
+                        <div><i class="fas fa-search"></i></div>
+                        <input class="input" placeholder="Tìm kiếm khóa học" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="category col-md-6 col-lg-4">
+                    <!-- <h4 class="text-center title">Chủ đề</h4> -->
+                    <div class="sidebar-wp">
+                        <div class="box-sidebar">
+                            <div class="title-sb" data-toggle="collapse" data-target="#collapseOne">
+                                <div class="icon-tt"><i class="fas fa-user"></i></div>
+                                <span class="name-tt">Khóa học cá nhân</span>
+                            </div>
+                            <ul class="category-list collapse show" id="collapseOne">
+                                <li class="item-cate">
+                                    <span>1.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>2.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>3.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>4.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>5.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-sidebar">
+                            <div class="title-sb" data-toggle="collapse" data-target="#collapseTwo">
+                                <div class="icon-tt"><i class="fas fa-users-cog"></i></div>
+                                <span class="name-tt">Khóa học doanh nghiệp</span>
+                            </div>
+                            <ul class="category-list collapse show" id="collapseTwo">
+                                <li class="item-cate">
+                                    <span>1.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>2.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>3.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>4.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                                <li class="item-cate">
+                                    <span>5.</span>
+                                    <span>Khóa học 1</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="list-video col-md-6 col-lg-8">
+                    <!-- <h4 class="text-center title">Khóa học của tôi</h4> -->
+                    <ul class="row">
+                        <li class="col-sm-12 col-md-12 col-lg-6 item-scourse-wp">
+                            <div class="item">
+                                <div class="icon-scourse"><i class="fas fa-user"></i></div>
+                                <a href="learnScourse.html">
+                                    <div class="img-scourse-wp"><img class="img-fluid" src="https://64.media.tumblr.com/ae33a92f694ce59eba935b057c29a856/40fc6627ba1cdcf5-1a/s1280x1920/b0705d895f0a790297ae4bf7297b19aad769a8c6.jpg" alt="" srcset=""></div>
+                                    <div class="srource-info">
+                                        <h4 class="course-title">Biện pháp phòng ngừa, ứng phó sự cố hóa chất</h4>
+                                        <div class="sub-wp"> 
+                                            <div class="sub-title">
+                                                <span>Giáo viên: </span>
+                                                <span>Nguyễn Văn A</span>
+                                            </div>
+                                            <div class="sub-title">
+                                                <span>Số lượng: </span>
+                                                <span>30 video</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-12 col-md-12 col-lg-6 item-scourse-wp">
+                            <div class="item">
+                                <div class="icon-scourse"><i class="fas fa-users-cog"></i></div>
+                                <a href="learnScourse.html">
+                                    <div class="img-scourse-wp"><img class="img-fluid" src="https://64.media.tumblr.com/ae33a92f694ce59eba935b057c29a856/40fc6627ba1cdcf5-1a/s1280x1920/b0705d895f0a790297ae4bf7297b19aad769a8c6.jpg" alt="" srcset=""></div>
+                                    <div class="srource-info">
+                                        <h4 class="course-title">Khóa học nghiệp vụ cơ bản cho người mới bắt đầu</h4>
+                                        <div class="sub-title">
+                                            <span>Giáo viên: </span>
+                                            <span>Nguyễn Văn A</span>
+                                        </div>
+                                        <div class="sub-title">
+                                            <span>Số lượng: </span>
+                                            <span>30 video</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-12 col-md-12 col-lg-6 item-scourse-wp">
+                            <div class="item">
+                                <div class="icon-scourse"><i class="fas fa-users-cog"></i></div>
+                                <a href="learnScourse.html">
+                                    <div class="img-scourse-wp"><img class="img-fluid" src="https://64.media.tumblr.com/ae33a92f694ce59eba935b057c29a856/40fc6627ba1cdcf5-1a/s1280x1920/b0705d895f0a790297ae4bf7297b19aad769a8c6.jpg" alt="" srcset=""></div>
+                                    <div class="srource-info">
+                                        <h4 class="course-title">Khóa học nghiệp vụ cơ bản cho người mới bắt đầu</h4>
+                                        <div class="sub-title">
+                                            <span>Giáo viên: </span>
+                                            <span>Nguyễn Văn A</span>
+                                        </div>
+                                        <div class="sub-title">
+                                            <span>Số lượng: </span>
+                                            <span>30 video</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-sm-12 col-md-12 col-lg-6 item-scourse-wp">
+                            <div class="item">
+                                <div class="icon-scourse"><i class="fas fa-user"></i></div>
+                                <a href="learnScourse.html">
+                                    <div class="img-scourse-wp"><img class="img-fluid" src="https://64.media.tumblr.com/ae33a92f694ce59eba935b057c29a856/40fc6627ba1cdcf5-1a/s1280x1920/b0705d895f0a790297ae4bf7297b19aad769a8c6.jpg" alt="" srcset=""></div>
+                                    <div class="srource-info">
+                                        <h4 class="course-title">Khóa học nghiệp vụ cơ bản cho người mới bắt đầu</h4>
+                                        <div class="sub-title">
+                                            <span>Giáo viên: </span>
+                                            <span>Nguyễn Văn A</span>
+                                        </div>
+                                        <div class="sub-title">
+                                            <span>Số lượng: </span>
+                                            <span>30 video</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li><i class="fas fa-angle-double-left"></i></li>
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li><i class="fas fa-angle-double-right"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-wp">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <div class="box">
+                            <div class="logo-ft"><img class="img-logo" src="../assets/images/logo-atld.png" alt=""></div>
+                            <ul class="content">
+                                <li>Số CNĐKKD: 3702404496 cấp ngày 13/10/2015, nơi cấp: Sở KH-ĐT tỉnh Bình Dương</li>
+                                <li>Địa chỉ: 502 Đỗ Xuân Hợp, phường Phước Bình, quận 9, thành phố Hồ Chí Minh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <div class="box">
+                            <div class="title">Hỗ trợ</div>
+                            <ul class="content">
+                                <li>Người đại diện: Bùi Trọng Nhân</li>
+                                <li>Số điện thoại: 0989211239</li>
+                                <li>Email: cskh.wss@giaiphapantoan.com.vn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                © 2021 All Rights Reserved
+            </div>
+        </div>
+    </div>
+
+         <!-- Jquery js file -->
+    <script src="../assets/js/jquery.3.6.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
