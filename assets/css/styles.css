@@ -585,8 +585,6 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 3px;
 }
 
@@ -602,10 +600,9 @@ ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 600;
   color: #555;
   cursor: pointer;
-  border: 1px solid #d8d8d83d;
+  border: 1px solid #d8d8d88c;
 }
 
 .pagination ul li i {
@@ -626,6 +623,7 @@ ul li {
 .pagination ul .active {
   background-color: #0086c4;
   color: #fff;
+  font-weight: 600;
 }
 
 /*Footer*/
@@ -684,6 +682,13 @@ ul li {
 }
 
 /**/
+.table-of-content .list-lession .name-lession {
+  padding: 15px 20px;
+  background: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .table-of-content .list-lession .lession {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,6 +705,7 @@ ul li {
   cursor: pointer;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
+  margin-bottom: 3px;
 }
 
 .table-of-content .list-lession .lession:hover {
@@ -722,6 +728,11 @@ ul li {
 
 .table-of-content .list-lession .lession .time {
   font-size: 15px;
+}
+
+.table-of-content .list-lession .item-lock {
+  background: #33333340;
+  cursor: not-allowed;
 }
 
 .table-of-content .list-lession .lession.active {
@@ -978,6 +989,7 @@ ul li {
 .learn-scourse .learn-content .col-title {
   font-weight: 700;
   font-size: 1.3rem;
+  margin-top: 10px;
 }
 
 .learn-scourse .learn-content .sub-name {
@@ -1008,6 +1020,12 @@ ul li {
   margin-left: 5px;
 }
 
+.learn-scourse .learn-content .text-normal .item-note span {
+  margin-left: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
 .learn-scourse .learn-content .start-video {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -1015,6 +1033,7 @@ ul li {
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .learn-scourse .learn-content .start-video a {
@@ -1371,15 +1390,14 @@ ul li {
 
 /*7. Register source detail*/
 .modal-regiter-scource .modal-content .modal-header {
-  text-align: center;
   border-bottom: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-bottom: 5px;
 }
 
 .modal-regiter-scource .modal-content .modal-header .modal-title {
   width: 100%;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1389,67 +1407,56 @@ ul li {
   padding: 0 1.5rem;
 }
 
-.modal-regiter-scource .modal-content .modal-body label {
-  position: absolute;
-  left: 13px;
-  color: #333333c2;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
+.modal-regiter-scource .modal-content .modal-body .title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.modal-regiter-scource .modal-content .modal-body .box-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 20px 5px 20px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .box-option input {
+  height: 16px;
+  width: 16px;
+  margin-right: 15px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .option-payment {
+  margin-left: 22px;
   font-size: 16px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
-.modal-regiter-scource .modal-content .modal-body label .req {
-  margin: 2px;
+.modal-regiter-scource .modal-content .modal-body .option-payment .ul-option li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.modal-regiter-scource .modal-content .modal-body label.active {
-  -webkit-transform: translateY(-40px);
-  transform: translateY(-40px);
-  left: 2px;
-  font-size: 14px;
-}
-
-.modal-regiter-scource .modal-content .modal-body label.active .req {
-  opacity: 0;
-}
-
-.modal-regiter-scource .modal-content .modal-body input {
-  font-size: 16px;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 8px 10px;
-  background: none;
-  background-image: none;
-  border: 1px solid #a0b3b0;
-  border-radius: 9px;
-  -webkit-transition: border-color .25s ease, -webkit-box-shadow .25s ease;
-  transition: border-color .25s ease, -webkit-box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease;
-  transition: border-color .25s ease, box-shadow .25s ease, -webkit-box-shadow .25s ease;
-}
-
-.modal-regiter-scource .modal-content .modal-body input:focus {
-  outline: 0;
-  border-color: #38aae6;
-}
-
-.modal-regiter-scource .modal-content .modal-body .field-wrap {
-  position: relative;
-  margin-bottom: 30px;
-}
-
-.modal-regiter-scource .modal-content .modal-body .field-wrap:last-child {
-  margin-bottom: 0px;
+.modal-regiter-scource .modal-content .modal-body .option-payment .ul-option li div {
+  width: 135px;
 }
 
 .modal-regiter-scource .modal-content .modal-footer {
   border-top: 0;
+}
+
+.modal-regiter-scource .modal-content .modal-footer button {
+  padding: 0;
+  width: 70px;
+  height: 34px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .toast-regiter {
@@ -1490,6 +1497,144 @@ ul li {
 .toast-regiter .toast-body .icon-success i {
   color: #fff;
   font-size: 10px;
+}
+
+.infoUser .list-info {
+  min-height: calc(100vh - 263px);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.infoUser .list-info .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.infoUser .list-info .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.infoUser .list-info .name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.infoUser .list-info .avatar-default {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0086c4;
+  margin-right: 30px;
+}
+
+.infoUser .list-info .avatar-default i {
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.infoUser .list-info .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #d8d8d8;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.infoUser .list-info .flex-center:last-child {
+  border-bottom: none;
+}
+
+.infoUser .list-info .flex-center:first-child {
+  border-bottom: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.infoUser .list-info .flex-center .title {
+  width: 140px;
+  margin-right: 15px;
+}
+
+.infoUser .list-info .flex-center input {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  outline: none;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.infoUser .list-info .flex-center input:focus {
+  border: 1px solid #0086c4;
+}
+
+.infoUser .list-info .table-my-scourse {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.infoUser .list-info .table-my-scourse .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.infoUser .list-info .table-my-scourse table {
+  width: 100%;
+}
+
+.infoUser .list-info .table-my-scourse table thead tr th {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  border: 1px solid #d8d8d8;
+  padding: 7px;
+}
+
+.infoUser .list-info .table-my-scourse table thead tr .min-w-80px {
+  min-width: 80px;
+}
+
+.infoUser .list-info .table-my-scourse table thead tr .min-w-100px {
+  min-width: 100px;
+}
+
+.infoUser .list-info .table-my-scourse table thead tr .min-w-130px {
+  min-width: 130px;
+}
+
+.infoUser .list-info .table-my-scourse table thead tr .align-center {
+  text-align: center;
+}
+
+.infoUser .list-info .table-my-scourse table tbody tr td {
+  border: 1px solid #d8d8d8;
+  padding: 10px;
+}
+
+.infoUser .list-info .table-my-scourse table tbody .align-center {
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1678,6 +1823,33 @@ ul li {
     font-size: 15px;
     margin-top: 5px;
   }
+  .infoUser .list-info {
+    font-size: 15px;
+  }
+  .infoUser .list-info .table-my-scourse .title {
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 16px;
+  }
+  .infoUser .list-info .table-my-scourse table thead tr th {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .infoUser .list-info .table-my-scourse table tbody tr td {
+    padding: 6px;
+  }
+  .infoUser .list-info .table-my-scourse table thead tr .min-w-100px {
+    min-width: 80px;
+  }
+  .infoUser .list-info .table-my-scourse table thead tr .min-w-80px {
+    min-width: 60px;
+  }
+  .infoUser .list-info .table-my-scourse table thead tr .min-w-130px {
+    min-width: 115px;
+  }
+  .infoUser .list-info .table-my-scourse table {
+    min-width: 515px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1800,6 +1972,12 @@ ul li {
   }
   .login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup {
     font-size: 15px;
+  }
+  .infoUser .list-info .table-my-scourse .table-wp {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    border: 1px solid #d8d8d8;
   }
 }
 
@@ -1925,6 +2103,20 @@ ul li {
   }
   .login-regiter .modal-custom .modal-content .content-form .tab-form-active .btn-signup {
     font-size: 14px;
+  }
+  .infoUser .list-info {
+    font-size: 14px;
+  }
+  .infoUser .list-info .flex-center .title {
+    margin-right: 5px;
+  }
+  .infoUser .list-info .avatar, .infoUser .list-info .avatar-default {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  .infoUser .list-info .name {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css file -->
+   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+   <!-- Font Awesome icons -->
+   <link href="../assets/css/all.css" rel="stylesheet">
+
+   <!-- custom css file -->
+   <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="infoUser">
+        <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <a class="navbar-brand logo" href="homeUser.html">
+                    <img class="img-logo" src="../assets/images/logo-atld.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color:#ffffff;" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="navbar-nav nav-custom">
+                      <div style="display: flex; align-items: center;">
+                            <div class="nav-item">
+                                <a class="nav-link link-custom" href="homeUser.html">Trang chủ<span class="sr-only">(current)</span></a>
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link link-custom" href="regiterScourse.html">Đăng kí khóa học</a>
+                            </div>
+                      </div>
+
+                        <div class="nav-item dropdown dropdown-info">
+                            <a class="nav-link dropdown-toggle info-user" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="avatar-user" src="https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg" alt="" srcset="">
+                                    
+                                    <!-- avatar default -->
+                                    <!-- <div class="avatar-user-default"><i class="fas fa-user"></i></div> -->
+                                    <!--  -->
+                                    
+                                    <span class="name-user">Nguyễn Đình Triều</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="inforUser.html">Chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="#">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="list-info container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="flex-center">
+                        <!-- avatar default -->
+                        <!-- <div class="avatar-default"><i class="fas fa-user"></i></div> -->
+                        <!--  -->
+                        <img class="avatar" src="https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg" alt="" srcset="">
+                        <div class="name">Nguyễn Đình Triều</div>
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Số điện thoại: </div>
+                        <input value='0123456789' />
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Năm sinh: </div>
+                        <input value='12/02/1999' />
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Email: </div>
+                        <input value='nguyenvana@gmail.com' />
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Đơn vị công tác: </div>
+                        <input value='Phòng hành chính' />
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Ngày vào làm: </div>
+                        <input value='1/1/2021' />
+                    </div>
+                    <div class="flex-center">
+                        <div class="title">Chức vụ: </div>
+                        <input value='Trưởng phòng' />
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-8 table-my-scourse">
+                    <div class="title">Khóa học của tôi</div>
+                    <div class="table-wp"> 
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên Khóa học</th>
+                                    <th class="min-w-130px align-center">Loại</th>
+                                    <th class="min-w-80px align-center">ĐIểm</th>
+                                    <th class="min-w-100px align-center">Hết hạn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="align-center">1</div>
+                                    </td>
+                                    <td>
+                                        <div>Khóa học nghiệp vụ cơ bản cho người mới bắt đầu</div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center">Cá nhân</div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center">5 / 10</div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center">20/5/2021</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="align-center">2</div>
+                                    </td>
+                                    <td>
+                                        <div>Khóa học nghiệp vụ cơ bản cho người mới bắt đầu</div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center">Doanh nghiệp</div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center"><i class="fas fa-times"></i></div>
+                                    </td>
+                                    <td>
+                                        <div class="align-center">20/5/2021</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-wp">
+            <div class="container footer">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <div class="box">
+                            <div class="logo-ft"><img class="img-logo" src="../assets/images/logo-atld.png" alt=""></div>
+                            <ul class="content">
+                                <li>Số CNĐKKD: 3702404496 cấp ngày 13/10/2015, nơi cấp: Sở KH-ĐT tỉnh Bình Dương</li>
+                                <li>Địa chỉ: 502 Đỗ Xuân Hợp, phường Phước Bình, quận 9, thành phố Hồ Chí Minh</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <div class="box">
+                            <div class="title">Hỗ trợ</div>
+                            <ul class="content">
+                                <li>Người đại diện: Bùi Trọng Nhân</li>
+                                <li>Số điện thoại: 0989211239</li>
+                                <li>Email: cskh.wss@giaiphapantoan.com.vn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy-right">
+                © 2021 All Rights Reserved
+            </div>
+        </div>
+    </div>
+    
+    <!-- Jquery js file -->
+    <script src="../assets/js/jquery.3.6.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@
     <div class="learn-scourse register-source-detail">
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light container">
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo" href="homeUser.html">
                     <img class="img-logo" src="../assets/images/logo-atld.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,10 +40,15 @@
                         <div class="nav-item dropdown dropdown-info">
                             <a class="nav-link dropdown-toggle info-user" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="avatar-user" src="https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg" alt="" srcset="">
+                                    
+                                    <!-- avatar default -->
+                                    <!-- <div class="avatar-user-default"><i class="fas fa-user"></i></div> -->
+                                    <!--  -->
+                                    
                                     <span class="name-user">Nguyễn Đình Triều</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="inforUser.html">Chỉnh sửa thông tin</a>
                                 <a class="dropdown-item" href="#">Đăng xuất</a>
                             </div>
                         </div>
@@ -54,17 +59,39 @@
 
         <div class="container learn-content">
             <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <a class="return-home">Đăng kí khóa học</a>
+                        >
+                        <a class="return-home">Khóa học cho doanh nghiệp</a>
+                        >
+                        <a class="return-home">Khóa học 1</a>
+                    </div>
+                </div>
                 <div class="col-md-7 col-lg-7 content">
                     <div>
-                        <div class="title">
-                            <a class="return-home">Đăng kí khóa học</a>
-                            >
-                            <a class="return-home">Khóa học cho doanh nghiệp</a>
-                            >
-                            <a class="return-home">Khóa học 1</a>
-                        </div>
                         <h3 class="name-scourse">Biện pháp phòng ngừa, ứng phó sự cố hóa chất</h3>
                         <p class="sub-name">Theo qui định của Luật hóa chất, tổ chức hoạt động hóa chất (Sản xuất, kinh doanh, vận chuyển, sử dụng...hóa chất) phải có biện pháp đảm bảo an toàn trong hoạt động hóa chất. Một trong những yêu cầu đó là tổ chức phải xây dựng kế hoạch/biện pháp phòng ngừa, ứng phó khi có sự cố hóa chất (tràn đổ, cháy nổ,..) xảy ra.</p>
+                    </div>
+                    <div>
+                        <h3 class="col-title">Thông tin liên quan</h3>
+                        <ul class="text-normal">
+                            <li class="item-note">
+                                <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                Số giờ huấn luyện lần đầu: 
+                                <span>48 giờ</span>
+                            </li>
+                            <li class="item-note">
+                                <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                Số giờ huấn luyện định kỳ
+                                <span>48 giờ</span>
+                            </li>
+                            <li class="item-note">
+                                <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                Tần suất huấn luyện
+                                <span>5 năm</span>
+                            </li>
+                        </ul>
                     </div>
                     <div>
                         <h3 class="col-title">Bạn sẽ học được những gì</h3>
@@ -150,38 +177,52 @@
           
             <!-- Modal Header -->
             <div class="modal-header">
-              <h5 class="modal-title">Thông tin đăng kí</h5>
+
+              <div class="modal-title">Đăng kí khóa học: Biện pháp phòng ngừa, ứng phó sự cố hóa chất</div>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             
             <!-- Modal body -->
-            <div class="modal-body">
-                <form action="" method="post">
-                    <div class="field-wrap">
-                        <label class="label-input">
-                            Họ tên<span class="req">*</span>
-                        </label>
-                        <input id="email" name="username" type="email" required autocomplete="off" />
-                    </div>
-                    <div class="field-wrap">
-                        <label class="label-input">
-                            Số điệnt thoại<span class="req">*</span>
-                        </label>
-                        <input id="phone" name="phone" type="number" required autocomplete="off" />
-                    </div>
-                    <div class="field-wrap">
-                        <label class="label-input">
-                            Email<span class="req">*</span>
-                        </label>
-                        <input id="email" name="username" type="email" required autocomplete="off" />
-                    </div>
-                </form>
+            <div class="modal-body" id="accordion">
+                <div class="title">Hình thức thanh toán:</div>
+                <div class="box-option">
+                    <input name="option" type="radio" value="cash"  data-toggle="collapse" data-target="#optionOne" aria-expanded="false" aria-controls="optionOne" />
+                    <span>Thanh toán bằng tiền mặt</span>
+                </div>
+                <div id="optionOne" class="collapse option-payment" aria-labelledby="headingTwo" data-parent="#accordion">
+                    Vui lòng đến địa chỉ 502 Đỗ Xuân Hợp, phường Phước Bình, quận 9, thành phố Hồ Chí Minh để thanh toán
+                </div>
+                
+                <div class="box-option">
+                    <input name="option" type="radio" value="transfer" id="headingTwo" data-toggle="collapse" data-target="#optionTwo" aria-expanded="false" aria-controls="optionTwo" />
+                    <span>Thanh toán bằng chuyển khoản</span>
+                </div>
+                <div id="optionTwo" class="collapse option-payment" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <ul class="ul-option">
+                        <li>
+                            <div>Số tài khoản:</div>
+                            <span>000 111 222 333</span>
+                        </li>
+                        <li>
+                            <div>Tên chủ khoản:</div>
+                            <span>Nguyễn Văn A</span>
+                        </li>
+                        <li>
+                            <div>Tên ngân hàng:</div>
+                            <span>Vietcombank</span>
+                        </li>
+                        <li>
+                            <div>Chi nhánh:</div>
+                            <span>Quận 9</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
             <!-- Modal footer -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-info" data-dismiss="modal"  id="showToast">Đăng kí</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info" data-dismiss="modal"  id="showToast">Đăng kí</button>
             </div>
           </div>
         </div>

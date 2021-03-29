@@ -18,7 +18,7 @@
     <div class="list-of-lessions">
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light container">
-                <a class="navbar-brand logo" href="#">
+                <a class="navbar-brand logo" href="homeUser.html">
                     <img class="img-logo" src="../assets/images/logo-atld.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,10 +28,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <div class="navbar-nav nav-custom">
                       <div style="display: flex; align-items: center;">
-                            <div class="nav-item active">
+                            <div class="nav-item">
                                 <a class="nav-link link-custom" href="homeUser.html">Trang chủ<span class="sr-only">(current)</span></a>
                             </div>
-                            <div class="nav-item ">
+                            <div class="nav-item">
                                 <a class="nav-link link-custom" href="regiterScourse.html">Đăng kí khóa học</a>
                             </div>
                       </div>
@@ -39,10 +39,15 @@
                         <div class="nav-item dropdown dropdown-info">
                             <a class="nav-link dropdown-toggle info-user" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="avatar-user" src="https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg" alt="" srcset="">
+                                    
+                                    <!-- avatar default -->
+                                    <!-- <div class="avatar-user-default"><i class="fas fa-user"></i></div> -->
+                                    <!--  -->
+                                    
                                     <span class="name-user">Nguyễn Đình Triều</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Chỉnh sửa thông tin</a>
+                                <a class="dropdown-item" href="inforUser.html">Chỉnh sửa thông tin</a>
                                 <a class="dropdown-item" href="#">Đăng xuất</a>
                             </div>
                         </div>
@@ -144,6 +149,7 @@
                                     <div class="lession btn-test">
                                         <div class="name">Bài 7: Làm bài kiểm tra</div>
                                         <span class="time">10 câu</span>
+                                        <!-- <span><i class="fas fa-user-lock"></i></span> -->
                                     </div>
                                 </div>
                             </div>
@@ -161,6 +167,9 @@
 
                 <div class="col-md-12 col-lg-4 table-of-content">
                     <div class="list-lession">
+                        <div class="name-lession">
+                            Biện pháp phòng ngừa, ứng phó sự cố hóa chất
+                        </div>
                         <div class="lession active">
                             <div class="name">Bài 1: Giới thiệu</div>
                             <span class="time">05:30</span>
@@ -185,10 +194,17 @@
                             <div class="name">Bài 6: Giới thiệu</div>
                             <span class="time">05:30</span>
                         </div>
-                        <div class="lession btn-test">
+
+                        <div class="lession btn-test item-lock">
                             <div class="name">Bài 7: Làm bài kiểm tra</div>
                             <span class="time">10 câu</span>
                         </div>
+
+                        <!-- Lock khi chưa hoàn thành video
+                        <div class="lession item-lock">
+                            <div class="name">Bài 7: Làm bài kiểm tra</div>
+                            <span class="time">10 câu</span>
+                        </div> -->
                     </div>
                 </div>
             </div>
