@@ -606,6 +606,15 @@ ul li {
         .item-lock {
             background: #33333340;
             cursor: not-allowed;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-bottom: 1px solid #d8d8d8;
+            margin-bottom: 3px;
+            font-size: 16px;
+            .fa-user-lock {
+                margin-right: 15px;
+            }
         }
         .lession.active {
             background-color: #0086c4;
@@ -616,6 +625,59 @@ ul li {
             }
             .time {
                 font-size: 15px;
+            }
+        }
+
+        .question-wp {
+            .item-question-test {
+                display: flex;
+                padding: 15px 20px;
+                background-color: #0000000d;
+                border-bottom: 1px solid #d8d8d8;
+                align-items: flex-start;
+                cursor: pointer;
+                transition: all ease 0.3s;
+                margin-bottom: 3px;
+                &:hover {
+                    background-color: #0086c4;
+                    color: #fff;
+                    .name, .time {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+                .name {
+                    font-size: 15px;
+                    margin-left: 9px;
+                }
+                .time {
+                    font-size: 15px;
+                    margin-left: 5px;
+                }
+
+                .icon {
+                    width: 15px;
+                    i {
+                        line-height: 0;
+                    }
+                    .fa-check {
+                        color: #10b410;
+                        font-size: 14px;
+                    }
+                    .fa-times {
+                        color: red;
+                        font-size: 15px;
+                    }
+                }
+               
+            }
+
+            .item-question-test.active {
+                background-color: #0086c4;
+                color: #fff;
+                .name, .time {
+                    font-weight: 600;
+                }
             }
         }
     }
@@ -1654,10 +1716,6 @@ ul li {
         padding: 13px  20px;
     }
 
-    .table-of-content .list-lession .lession.active .name {
-        font-size: 15px;
-    }
-
     .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
         padding: 0.4rem 1.25rem!important;
     }
@@ -1864,6 +1922,21 @@ ul li {
         overflow-x: auto;
         border: 1px solid #d8d8d8;
     } 
+    .table-of-content .list-lession .lession .name {
+        font-size: 15px;
+    }
+    .table-of-content .list-lession .lession .time {
+        font-size: 13px;
+    }
+    .table-of-content .list-lession .item-lock .name {
+        font-size: 15px;
+    }
+    .table-of-content .list-lession .lession.active .name {
+        font-size: 15px;
+    }
+    .table-of-content .list-lession .lession.active .time {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -2001,6 +2074,13 @@ ul li {
     }
     .infoUser .list-info .name {
         font-size: 16px;
+    }
+    .table-of-content .list-lession .question-wp .item-question-test.active .name {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .table-of-content .list-lession .question-wp .item-question-test.active .time {
+        font-size: 14px;
     }
 }
 
