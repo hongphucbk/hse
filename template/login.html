@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,114 +15,224 @@
     <!-- custom css file -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
-<body>
-    <a class="login-trigger" href="#" data-target="#form-login" data-toggle="modal">Login & Regiser</a>
 
-    <div id="form-login" class="login-regiter modal fade" role="dialog">
+<body>
+    <!-- <a class="login-trigger" href="#" data-target="#form-login" data-toggle="modal">Login & Regiser</a> -->
+    <a class="link-lg" data-target="#loginForm" data-toggle="modal" data-tab="btn-show-login">
+        Đăng nhập
+    </a>
+    <a href="#loginForm" data-toggle="modal">
+        Đăng ký
+    </a>
+
+    <div id="loginForm" class="modal fade" role="dialog">
         <div class="modal-dialog modal-custom">
             <div class="modal-content">
                 <div class="modal-body content-form">
                     <button data-dismiss="modal" class="close">&times;</button>
-                    <div class="form login-signup-reset">
-                        <div class="tab-content">
-                            <div class="form-active" id="login">
-                                <h5 class="title">ĐĂNG NHẬP</h5>
-                                <form action="" method="post">
-                                    <div class="field-wrap">
-                                        <label class="label-input">
-                                            Email<span class="req">*</span>
-                                        </label>
-                                        <input id="email" name="username" type="email" required autocomplete="off" />
+
+                    <ul class="nav nav-tabs login-tab-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" data-toggle="tab" href="#tabLogin" aria-controls="tabLogin" role="tab">ĐĂNG NHẬP</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="btn-show-register nav-link" data-toggle="tab" href="#tabRegister" aria-controls="tabRegister" role="tab">ĐĂNG KÝ</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="tabLogin">
+                            <form class="form-horizontal ng-pristine ng-valid" method="post" action="">
+                                <div class="form-group required">
+                                    <label for="inputEmailPhone" class="control-label">Email / Sđt</label>
+                                    <div class="input-wp">
+                                        <input type="text" name="username" value="" id="inputEmailPhone"
+                                                placeholder="Email / Số điện thoại" class="form-control"
+                                                required="required">
                                     </div>
-    
-                                    <div class="field-wrap">
-                                        <label class="label-input">
-                                            Password<span class="req">*</span>
-                                        </label>
-                                        <input type="password" name="password" id="password" required autocomplete="off" />
+                                </div>
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Mật khẩu</label>
+
+                                    <div class="input-wp">
+                                        <input type="password" name="password" class="form-control" id="inputPassword"
+                                            placeholder="Mật khẩu" required="required">
                                     </div>
-    
-                                    <input in="Login" type="submit" name="button" value="ĐĂNG NHẬP" class="button button-block">
-                                    <!-- <button name="button" class="button button-block">Log In</button> -->
-                                    <div class="tab-form-active text-center">Bạn chưa có tài khoản? <a class="btn-signup" href="#signup">Đăng kí mới</a></div>
-                                    <div class="tab-form-active text-center"><a href="#reset" class="btn-forgot">Quên mật khẩu</a></div>
-                                </form>
+                                </div>
+
+                                <div class="form-group remember">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="remember"> Ghi nhớ
+                                            </label>
+                                        </div>
+                                        <a class="btn-fogot">Quên
+                                            mật khẩu?</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-submit btn-hover">Đăng nhập</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade" id="tabRegister">
+                            <form class="form-horizontal ng-pristine ng-valid" method="post" action="">
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Họ tên</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id="" placeholder="Họ tên"
+                                            class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Email</label>
+
+                                    <div class="input-wp">
+                                        <input type="email" name="" id="" placeholder="Email" value=""
+                                            class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Mật khẩu</label>
+
+                                    <div class="input-wp">
+                                        <input type="" name="" id="" placeholder="Mật khẩu" value=""
+                                            class="form-control" required="required">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Nhập lại mật khẩu</label>
+
+                                    <div class="input-wp">
+                                        <input type="" name="" id="" placeholder="Nhập lại mật khẩu" value=""
+                                            class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Số điện thoại</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Số điện thoại" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">CMND</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Chứng minh nhân dân" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Năm sinh</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Ngày tháng năm sinh" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Đơn vị công tác</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Đơn vị công tác" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Ngày vào làm</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Ngày vào làm" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <label for="inputPassword" class="control-label">Chức vụ</label>
+
+                                    <div class="input-wp">
+                                        <input type="text" name="" value="" id=""
+                                            placeholder="Chức vụ" class="form-control" required="required">
+                                    </div>
+                                </div>
+
+                                <div class="form-group required">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" required="required">
+                                            Tôi đồng ý với <a href="#" target="_blank"><u> điều khoản của công
+                                                    ty</u></a>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-submit btn-hover">Tạo tài khoản</button>
+                                </div>
+                            </form>
+
+                            <div id="formForCompany" class="d-none">
+                                <div class="form-group required">
+                                    <label class="col-sm-3 control-label" for="input-company">Tên công ty</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="company" placeholder="Tên công ty" id="input-company"
+                                            class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="col-sm-3 control-label" for="input-address-1">Lĩnh vực kinh
+                                        doanh</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="business_areas" placeholder="Lĩnh vực kinh doanh"
+                                            id="input-address-1" class="form-control" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="col-sm-3 control-label" for="input-address-2">Loại hình</label>
+                                    <div class="col-sm-9">
+                                        <select name="company_type_id" id="input" class="form-control"
+                                            required="required">
+                                            <option value="1">Nhà làm máy (OEM)</option>
+                                            <option value="2">Nhà phân phối (VAR)</option>
+                                            <option value="3">Nhà tích hợp hệ thống (SI)</option>
+                                            <option value="4">Nhà làm tủ điện (PnB)</option>
+                                            <option value="5">KH thương mại (Trading)</option>
+                                            <option value="6">Người sử dụng (EU)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <label class="col-sm-3 control-label" for="input-city">Mã số thuế </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" name="tax_code" placeholder="Mã số thuế " id="input-city"
+                                            class="form-control" required="">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div id="signup" class="form-sign-up form-active" style="display: none">
-                                <h5 class="title">ĐĂNG KÍ</h5>
-                                <form action="" method="post">
-                                    <div class="top-row">
-                                        <div class="field-wrap row-custom">
-                                            <!-- <label class="label-input">
-                                                Tên<span class="req">*</span>
-                                            </label> -->
-                                            <input type="text" placeholder="Tên *" name="firstname" required autocomplete="off" />
-                                        </div>
-    
-                                        <div class="field-wrap">
-                                            <input type="text" placeholder="Họ *" name="lastname" required autocomplete="off" />
-                                        </div>
-                                    </div>
-    
-                                    <div class="field-wrap">
-                                        <input type="email" name="email" placeholder="Email *" required autocomplete="off" />
-                                    </div>
 
-                                    <div class="field-wrap" style="margin-bottom: 35px">
-                                        <input type="password" placeholder="Mật khẩu *" required autocomplete="off" />
-                                    </div>
-
-                                    <div class="field-wrap">
-                                        <input type="text" name="birthday" placeholder="CMND *" required autocomplete="off" />
-                                    </div>
-
-                                    <div class="field-wrap">
-                                        <input type="text" name="birthday" placeholder="Ngày/tháng/năm sinh *" required autocomplete="off" />
-                                    </div>
-
-                                    <div class="field-wrap">
-                                        <input type="text" name="workUnit" placeholder="Đơn vị công tác *" required autocomplete="off" />
-                                    </div>
-
-                                    <div class="top-row">
-                                        <div class="field-wrap">
-                                            <input type="text" placeholder="Ngày vào làm *" name="dateWork" required autocomplete="off" />
-                                        </div>
-                                        <div class="field-wrap">
-                                            <input type="text" placeholder="Chức vụ *" name="position" required autocomplete="off" />
-                                        </div>
-                                    </div>
-    
-                                    <button type="submit" name="register" class="button button-block" />ĐĂNG KÍ</button>
-                                    <div class="tab-form-active text-center">Bạn có tài khoản? <a class="btn-signup" href="#login">Đăng nhập</a></div>
-    
-                                </form>
-                            </div>
-
-                            <div id="reset" style="display: none">
-                                <h5 class="title">LẤY LẠI MẬT KHẨU</h5>
-                                <form action="" method="post">
-                                    <div class="field-wrap">
-                                        <label class="label-input">
-                                            Địa chỉ Email bạn đã đăng kí<span class="req">*</span>
-                                        </label>
-                                        <input id="email" name="username" type="email" required autocomplete="off" />
-                                    </div>
-    
-                                    <input in="reset" type="submit" name="button" value="GỬI MẬT KHẨU" class="button button-block">
-                                    <!-- <button name="button" class="button button-block">Log In</button> -->
-                                    <div class="tab-form-active text-center">Bạn chưa có tài khoản? <a class="btn-signup" href="#signup">Đăng kí mới</a></div>
-                                </form>
-                            </div>
-
-                        </div><!-- tab-content -->
-                    </div> <!-- /form -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <!-- Jquery js file -->
     <script src="../assets/js/jquery.3.6.js"></script>
     <!-- Bootstrap js file -->
@@ -129,4 +240,5 @@
 
     <script src="../assets/js/main.js"></script>
 </body>
+
 </html>
