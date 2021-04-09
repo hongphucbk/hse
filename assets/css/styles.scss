@@ -1542,6 +1542,10 @@ ul li {
 }
 
 /*8. Home-page*/
+.home-page-scroll {
+    margin-top: 100px;
+}
+
 .home-page {
     #top-bar {
         background-color: #e6e9f15c;
@@ -1609,7 +1613,29 @@ ul li {
         }
     }
 
+    // .header-fixed {
+    //     position: sticky;
+    //     width: 100%;
+    //     top: 0;
+    //     z-index: 5;
+    //     right: 0;
+    //     left: 0;
+    //     transition: all 0.5s;
+    // }
+
+    .header-scroll {
+        transition: all 0.5s;
+        position: sticky;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+        right: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+
     #header-company {
+        background-color: #fff;
         .header-inner {
             display: flex;
             align-items: center;
@@ -1664,10 +1690,13 @@ ul li {
     }
 
     .header {
+        transition: all 0.3s ease-in-out;
+
         .navbar-light {
             .nav-item {
                 margin-left: 0;
                 margin-right: 0;
+                text-decoration: none;
                 .nav-link {
                     margin-left: 0;
                     margin-right: 0;
@@ -2124,6 +2153,111 @@ ul li {
                 .owl-stage {
                     display: flex;
                     align-items: center;
+                }
+            }
+        }
+    }
+
+    #about {
+        margin-top: 30px;
+        position: relative;
+        .about-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+            .about-company {
+                display: flex;
+                align-items: center;
+                .hse-image {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .about-service {
+            padding: 40px 0;
+            background-color: #0086c4;
+            .item-service {
+                display: flex;
+                align-items: center;
+                padding: 15px 25px;
+                border: 1px solid #fff;
+                border-radius: 4px;
+                .img-service {
+                    position: relative;
+                    padding-right: 15px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 70%;
+                        width: 1px;
+                        background-color: #fff;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        filter: invert(88%) sepia(10%) saturate(186%) hue-rotate(191deg) brightness(107%) contrast(88%);
+                    }
+                }
+                .info-service {
+                    margin-left: 20px;
+                    .title {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    #session-contact {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background-color: #e6e9f15c;
+
+        #main-title-home {
+            text-align: center;
+        }
+
+        .map {
+            border-radius: 5px;
+        }
+
+        .contact-form {
+            text-align: center;
+            input, textarea {
+                font-size: 15px;
+                padding: 7px 15px;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid #d8d8d8;
+                transition: 0.3s;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            input, textarea {
+                &:hover, &:focus {
+                    border: 1px solid #0086c4;
+                }
+            }
+
+            .btn-send {
+                padding: 10px 25px;
+                border-radius: 20px;
+                color: #fff;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .btn-hover {
+                &::before {
+                    border-radius: 20px;
                 }
             }
         }
@@ -3059,4 +3193,3 @@ ul li {
         padding: 0;
     }
 }
-

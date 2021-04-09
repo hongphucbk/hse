@@ -1,30 +1,3 @@
-// $('.login-signup-reset').find('input, textarea').on('keyup blur focus', function (e) {
-//     var $this = $(this),
-//     label = $this.prev('label');
-
-//     if (e.type === 'keyup') {
-//             if ($this.val() === '') {
-//         label.removeClass('active highlight');
-//         } else {
-//         label.addClass('active highlight');
-//         }
-//     } else if (e.type === 'blur') {
-//         if( $this.val() === '' ) {
-//             label.removeClass('active highlight'); 
-//             } else {
-//             label.removeClass('highlight');   
-//             }   
-//     } else if (e.type === 'focus') {
-    
-//     if( $this.val() === '' ) {
-//             label.removeClass('highlight'); 
-//             } 
-//     else if( $this.val() !== '' ) {
-//             label.addClass('highlight');
-//             }
-//     }
-// });
-
 $(".lession").click(function() {
     
     var listItems = $(".lession");
@@ -51,8 +24,6 @@ $( document ).ready(function() {
       
 });
 
-
-  
 $('.tab-form-active a').on('click', function (e) {
     e.preventDefault();
     
@@ -66,7 +37,6 @@ $('.tab-form-active a').on('click', function (e) {
     $(target).fadeIn(600);
 });
   
-
 window.onload = function() {
     $(".box-inner").find("h6").addClass("translate-sub");
     $(".box-inner").find("h3").addClass("translate-main");
@@ -77,6 +47,28 @@ window.onload = function() {
 $('.carousel-background-panner').carousel({
     interval: 7000
 })
+
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  let scrollY = window.pageYOffset;
+  
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 180;
+    sectionId = current.getAttribute("id");
+    
+    if (
+      scrollY > sectionTop &&
+      scrollY <= sectionTop + sectionHeight
+    ){
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+    } else {
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+    }
+  });
+}
 
 $('.carousel-instructor').owlCarousel({
     autoplay:true,
