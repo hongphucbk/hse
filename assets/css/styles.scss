@@ -736,6 +736,78 @@ ul li {
 .modal-backdrop {
     display: none;
 }
+#resetForm {
+    z-index: 11;
+    .modal-custom {
+        .tab-content {
+            padding: 0 20px;
+        }
+        .md-title {
+            color: #555;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .title {
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .required {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .control-label{
+                font-size: 13px;
+                font-weight: normal;
+                margin-bottom: 0;
+                width: 75px;
+                margin-right: 15px;
+                color: #000;
+                &:before {
+                    content: '* ';
+                    color: #f00;
+                    font-weight: bold;
+                  
+                }
+            }
+            .input-wp {
+                width: 100%;
+                margin-right: 30px;
+                .form-control {
+                    display: block;
+                    width: 100%;
+                    height: 34px;
+                    padding: 6px 12px;
+                    font-size: 13px;
+                    line-height: 1.42857143;
+                    color: #555;
+                    background-color: #fff;
+                    background-image: none;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                    outline: none;
+                    &:focus {
+                        border-color: #66afe9;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+                    }
+                }
+            }
+            .btn-reset {
+                color: #fff;
+                font-weight: 600;
+                font-size: 13px;
+                border-radius: 0;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+}
+
 #loginForm {
     z-index: 10;
     .modal-custom {
@@ -1473,8 +1545,8 @@ ul li {
             }
 
             .title {
-                width: 140px;
-                margin-right: 15px;
+                width: 165px;
+                font-size: 14px;
             }
 
             input {
@@ -1483,6 +1555,7 @@ ul li {
                 outline: none;
                 border-radius: 5px;
                 padding: 3px 10px;
+                font-size: 14px;
                 &:focus {
                     border: 1px solid #0086c4;
                 }
@@ -1507,7 +1580,7 @@ ul li {
                             text-align: center;
                             text-transform: uppercase;
                             font-weight: 500;
-                            font-size: 15px;
+                            font-size: 14px;
                             border: 1px solid #d8d8d8;
                             padding: 7px;
                         }
@@ -1533,7 +1606,7 @@ ul li {
                         td {
                             border: 1px solid #d8d8d8;
                             padding: 10px;
-
+                            font-size: 14px;
                         }
                     }
                     .align-center {
@@ -3057,6 +3130,18 @@ ul li {
     .home-page .header .navbar-light .nav-item .d480-none {
         display: none;
     }
+    #loginForm .modal-content .content-form .form-group .checkbox label {
+        margin-left: 0;
+    }
+    #loginForm .modal-content .content-form .tab-content .required .control-label {
+        width: 130px;
+    }
+    #loginForm .modal-content .content-form .tab-content .form-group {
+        text-align: center;
+    }
+    #loginForm .modal-content .content-form .form-group .btn-submit {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -3325,4 +3410,25 @@ ul li {
     .home-page .header .navbar-light .nav-item .d320-none {
         display: none;
     }
+    #loginForm .modal-content .content-form .tab-content .form-group {
+        display: block;
+        text-align: left;
+    }
+    #loginForm .modal-content .content-form .tab-content .required .control-label {
+        text-align: left;
+    }
+    #resetForm .modal-content .content-form .tab-content .form-group {
+        display: block;
+        text-align: left;
+    }
+    #resetForm .modal-content .content-form .tab-content .required .control-label {
+        text-align: left;
+    }
+    #resetForm .modal-custom .required .btn-reset {
+        margin-top: 15px;
+    }
+    #resetForm .modal-custom .tab-content {
+        padding: 0;
+    }
 }
+

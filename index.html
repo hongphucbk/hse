@@ -136,7 +136,7 @@
                                                                         <input type="checkbox" name="remember"> Ghi nhớ
                                                                     </label>
                                                                 </div>
-                                                                <a class="btn-fogot">Quên
+                                                                <a href="#" class="btn-fogot" data-target="#resetForm" data-toggle="modal">Quên
                                                                     mật khẩu?</a>
                                                             </div>
                                                         </div>
@@ -293,6 +293,37 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="resetForm" class="modal fade" role="dialog">
+                                <div class="modal-dialog modal-custom">
+                                    <div class="modal-content">
+                                        <div class="modal-body content-form">
+                                            <div style="display: flex; align-items: center; justify-content: space-between;">    
+                                                <div class="md-title">Quên mật khẩu</div>
+                                                <button data-dismiss="modal" class="close">&times;</button>
+                                            </div>
+                        
+                                            <div class="tab-content">
+                                                <div role="tabpanel" class="tab-pane active" id="tabLogin">
+                                                    <form class="form-horizontal ng-pristine ng-valid" method="post" action="">
+                                                        <div class="title">Vui lòng nhập địa chỉ email của bạn. Bạn sẽ nhận được một liên kết để tạo một mật khẩu mới qua email.</div>
+                                                        
+                                                        <div class="form-group required">
+                                                            <label for="inputEmailPhone" class="control-label">Email</label>
+                                                            <div class="input-wp">
+                                                                <input type="email" name="" value="" id=""
+                                                                        placeholder="Email" class="form-control"
+                                                                        required="required">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-reset btn-hover">Gửi</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -735,6 +766,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Jquery js file -->
     <script src="./assets/js/jquery.3.6.js"></script>
     <!-- Bootstrap js file -->
