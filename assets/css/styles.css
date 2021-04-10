@@ -891,6 +891,14 @@ ul li {
 }
 
 /*2. Form Login & Regiter*/
+.modal-backdrop {
+  display: none;
+}
+
+#loginForm {
+  z-index: 10;
+}
+
 #loginForm .modal-custom {
   max-width: 600px;
 }
@@ -2114,6 +2122,10 @@ ul li {
   transition: 1s;
 }
 
+.home-page #carouselBackgroundPanner .item-carousel-first .box-inner a {
+  text-decoration: none;
+}
+
 .home-page #carouselBackgroundPanner .item-carousel-first .box-inner .now {
   height: 100%;
   color: #fff;
@@ -2271,9 +2283,9 @@ ul li {
 
 .home-page #main-title-home .main {
   color: #0086c4;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .home-page .top-instructor {
@@ -2425,6 +2437,15 @@ ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.home-page #session-scourse .scourse-header a {
+  text-decoration: none;
+}
+
+.home-page #session-scourse .scourse-header #main-title-home {
+  margin-bottom: 0;
 }
 
 .home-page #session-scourse .scourse-header .btn-wrapper {
@@ -2450,12 +2471,12 @@ ul li {
       -ms-flex-pack: center;
           justify-content: center;
   width: 115px;
-  height: 45px;
+  height: 40px;
 }
 
 .home-page #session-scourse .scourse-header .btn-wrapper .icon-btn {
   width: 50px;
-  height: 45px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2594,6 +2615,10 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.home-page #about .about-wrapper .about-company #main-title-home {
+  margin-bottom: 15px;
 }
 
 .home-page #about .about-wrapper .about-company .hse-image img {
@@ -2801,6 +2826,12 @@ ul li {
   .home-page #sesion-partner {
     margin-top: 30px;
     margin-bottom: 40px;
+  }
+  .home-page #about .about-service .item-service.item-service-margin {
+    margin: 15px 0;
+  }
+  .home-page #session-contact .map {
+    margin-bottom: 25px;
   }
 }
 
@@ -3032,8 +3063,14 @@ ul li {
     font-size: 14px;
   }
   .home-page #main-title-home .main {
-    font-size: 37px;
+    font-size: 25px;
     margin-bottom: 1px;
+  }
+  .home-page #about .about-wrapper {
+    margin-bottom: 0;
+  }
+  .home-page #about {
+    margin-top: 20px;
   }
   .home-page .top-instructor .owl-carousel .item-instructor img {
     height: 230px;
@@ -3063,6 +3100,31 @@ ul li {
   .home-page #session-scourse .scourse-header .btn-wrapper .icon-btn {
     width: 42px;
     height: 40px;
+  }
+  .home-page #about .about-wrapper .about-company .infomation p {
+    font-size: 15px;
+  }
+  .home-page #session-contact .map {
+    height: 350px;
+    margin-bottom: 15px;
+  }
+  .home-page #session-contact .map iframe {
+    height: 350px;
+  }
+  .home-page #session-contact .contact-form input, .home-page #session-contact .contact-form textarea {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .home-page .header .navbar-light .nav-item .link-custom {
+    font-size: 15px;
+    margin-right: 18px;
+  }
+  .header .navbar-light .site-login {
+    font-size: 15px;
+  }
+  .home-page #session-scourse {
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
 }
 
@@ -3262,7 +3324,10 @@ ul li {
     font-size: 13px;
   }
   .home-page #main-title-home .main {
-    font-size: 33px;
+    font-size: 22px;
+  }
+  .home-page #about .about-wrapper .about-company .infomation p {
+    font-size: 14px;
   }
   .home-page .top-instructor {
     padding-top: 17px;
@@ -3324,6 +3389,29 @@ ul li {
     height: 30px;
     background: none !important;
     opacity: 0;
+  }
+  .home-page #about .about-service .item-service .info-service .title {
+    font-size: 14px;
+  }
+  .home-page #about .about-service .item-service .img-service img {
+    width: 45px;
+    height: 45px;
+  }
+  .home-page #about .about-service .item-service {
+    padding: 13px 23px;
+  }
+  .home-page #about .about-service {
+    padding: 30px 0;
+  }
+  .home-page .header .navbar-light .nav-item .link-custom {
+    margin-right: 24px;
+    font-size: 14px;
+  }
+  .header .navbar-light .site-login {
+    font-size: 14px;
+  }
+  .home-page .header .navbar-light .nav-item .d480-none {
+    display: none;
   }
 }
 
@@ -3512,9 +3600,6 @@ ul li {
   .home-page #carouselBackgroundPanner .item-carousel-first .box-inner .main-title .item-sub {
     font-size: 15px;
   }
-  .home-page #main-title-home .main {
-    font-size: 27px;
-  }
   .home-page #session-scourse .scourse-header .btn-wrapper {
     display: none;
   }
@@ -3526,6 +3611,7 @@ ul li {
   }
   .home-page .top-instructor {
     padding-bottom: 10px;
+    padding-top: 0;
   }
   .home-page #session-scourse {
     padding-top: 10px;
@@ -3552,6 +3638,52 @@ ul li {
   }
   .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .tab-content {
     padding: 0;
+  }
+  .home-page #about .about-service .item-service {
+    padding: 8px 18px;
+  }
+  .home-page #about .about-service .item-service .img-service {
+    padding-right: 12px;
+  }
+  .home-page #about .about-service .item-service .img-service img {
+    width: 40px;
+    height: 40px;
+  }
+  .home-page #about .about-service .item-service .info-service {
+    margin-left: 15px;
+  }
+  .home-page #about {
+    margin-top: 12px;
+  }
+  .home-page #session-contact {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  .home-page #session-contact .map iframe {
+    height: 270px;
+  }
+  .home-page #session-contact .map {
+    height: 270px;
+  }
+  .home-page #session-contact .contact-form .btn-send {
+    padding: 6px 25px;
+    font-size: 13px;
+  }
+  .home-page #session-contact .contact-form input, .home-page #session-contact .contact-form textarea {
+    font-size: 13px;
+  }
+  .home-page #about .about-wrapper .about-company .infomation p {
+    font-size: 13px;
+  }
+  .home-page #about .about-service .item-service .info-service .title {
+    font-size: 13px;
+  }
+  .home-page #about .about-service .item-service .img-service img {
+    width: 35px;
+    height: 35px;
+  }
+  .home-page .header .navbar-light .nav-item .d320-none {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
