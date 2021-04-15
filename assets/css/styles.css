@@ -1363,6 +1363,7 @@ ul li {
   margin: 0 auto;
   margin-top: 72px !important;
   overflow: hidden;
+  padding-right: 15px;
 }
 
 .list-of-lessions .content-video-wrapper::-webkit-scrollbar {
@@ -1631,10 +1632,11 @@ ul li {
 }
 
 .list-of-lessions .content-video-wrapper .table-of-content .list-lession {
-  position: fixed;
+  position: absolute;
   top: 0;
   margin-left: 20px;
-  margin-top: 72px;
+  padding-right: 15px;
+  width: 100%;
   height: calc(100vh - 72px);
   overflow: auto;
   background: #dddddd6b;
@@ -1648,6 +1650,127 @@ ul li {
 
 .tabs-information .tab-content .table-of-content {
   display: none;
+}
+
+.tabs-information .tab-content .tab-question {
+  margin-bottom: 20px;
+}
+
+.tabs-information .tab-content .tab-question .question {
+  margin-top: 10px;
+}
+
+.tabs-information .tab-content .session-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.tabs-information .tab-content .session-input input {
+  width: 50%;
+  outline: none;
+  border: 1px solid #d8d8d8;
+  padding: 2px 10px;
+}
+
+.tabs-information .tab-content .session-input .btn-submit {
+  border: none;
+  outline: none;
+  padding: 3px 15px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.tabs-information .tab-content .tab-answer {
+  width: 80%;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .answer {
+  margin-left: 10px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  width: 80%;
+  padding: 3px 10px;
+  font-size: 14px;
+  color: #333;
+  width: 100%;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .answer .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .answer .an-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .answer .an-header .btn-answer {
+  cursor: pointer;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer .answer .an-header .btn-answer:hover {
+  color: #0086c4;
+}
+
+.tabs-information .tab-content .tab-answer .admin-answer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tabs-information .tab-content .tab-answer .admin-answer input {
+  width: 68%;
+}
+
+.tabs-information .tab-content .tab-answer .item-answer.admin {
+  padding-left: 30px;
 }
 
 /*7. Register source detail*/
@@ -2830,6 +2953,9 @@ ul li {
   .list-of-lessions .content-video-wrapper .table-of-content .list-lession {
     margin-left: 0;
   }
+  .list-of-lessions .content-video-wrapper, .list-of-lessions .content-video-wrapper .table-of-content .list-lession {
+    padding-right: 0px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -3512,6 +3638,12 @@ ul li {
   #loginForm .modal-content .content-form .form-group .btn-submit {
     margin-left: 0;
   }
+  .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
+    padding: 0.25rem 0.9rem !important;
+  }
+  .tabs-information .tab-content .tab-answer {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -3596,7 +3728,7 @@ ul li {
     padding: 0px !important;
   }
   .list-of-lessions .content-video-wrapper .video-wrapper .tabs-information .nav-tabs .nav-item .nav-link {
-    padding: 0.3rem 0.8rem !important;
+    padding: 0.2rem 0.6rem !important;
   }
   .list-of-lessions .content-video-wrapper .video-wrapper #session-learn.show-video-learn {
     padding: 0 30px;
@@ -3803,6 +3935,20 @@ ul li {
   }
   #resetForm .modal-custom .tab-content {
     padding: 0;
+  }
+  .tabs-information .tab-content .tab-answer .item-answer .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .tabs-information .tab-content .tab-answer .item-answer .avatar img {
+    width: 32px;
+    height: 32px;
+  }
+  .tabs-information .tab-content .tab-answer .item-answer .avatar .tabs-information .tab-content .tab-answer .item-answer .answer {
+    font-size: 13px;
+  }
+  .tabs-information .tab-content .tab-answer .item-answer .avatar .tabs-information .tab-content .tab-answer .item-answer .answer .name {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

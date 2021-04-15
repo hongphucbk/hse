@@ -10,7 +10,11 @@
 
     <!-- Font Awesome icons -->
     <link href="../assets/css/all.css" rel="stylesheet">
-
+ 
+    <!-- CSS Carousel -->
+    <link rel="stylesheet" href="../assets/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/owl-carousel/assets/owl.theme.default.min.css">
+ 
     <!-- custom css file -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -121,6 +125,9 @@
                         <li class="nav-item">
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tệp đính kèm</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="question-tab" data-toggle="tab" href="#question" role="tab" aria-controls="question" aria-selected="false">Q&A</a>
+                        </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade table-of-content" id="contact" role="tabpanel" aria-labelledby="contact-tab">
@@ -189,6 +196,64 @@
                             <div>- Phần 4: Kết luận và phụ lục kèm theo</div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="question-tab">
+                            <div class="tab-question">
+                                <div>Bạn cần giúp đỡ điều gì?</div>
+                                <div class="question session-input">
+                                    <input placeholder="Nhập câu hỏi" />
+                                    <button class="btn-hover btn-submit">Gửi</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-answer">
+                                <div class="item-answer user">
+                                    <div>
+                                        <div class="avatar">
+                                            <img src='https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg' />
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <div class="name">Nguyễn Đình Triêu</div>
+                                        Làm thế nào để trả lời tốt các câu hỏi? 
+                                    </div>
+                                </div>
+                                <div class="admin-answer session-input">
+                                    <input class="input-answer" placeholder="Nhập câu trả lời" />
+                                    <button class="btn-submit btn-hover">Trả lời</button>
+                                </div>
+                            </div>
+
+                            <div class="tab-answer">
+                                <div class="item-answer user">
+                                    <div>
+                                        <div class="avatar">
+                                            <img src='https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg' />
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <div class="name">Nguyễn Đình Triêu</div>
+                                        Làm thế nào để trả lời tốt các câu hỏi? 
+                                    </div>
+                                </div>
+                               
+                                <div class="item-answer admin">
+                                    <div>
+                                        <div class="avatar">
+                                            <img src='https://64.media.tumblr.com/08e9fcba730f27bc84c15972f7a339ec/d969fd132721b19f-7a/s1280x1920/8ee0c44d857814e38a157ab944991b3f6662343e.jpg' />
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <div class="name">Công ty TNHH Dịch vụ An toàn lao động Việt Nam</div>
+                                        Học hết video
+                                    </div>
+                                </div>
+
+                                <div class="admin-answer session-input">
+                                    <input class="input-answer" placeholder="Nhập câu trả lời" />
+                                    <button class="btn-submit btn-hover">Trả lời</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,11 +326,13 @@
       
     </div>
     
-    <!-- Jquery js file -->
-    <script src="../assets/js/jquery.3.6.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="../assets/js/bootstrap.min.js"></script>
+   <!-- Jquery js file -->
+   <script src="../assets/js/jquery.3.6.js"></script>
+   <!-- Bootstrap js file -->
+   <script src="../assets/js/bootstrap.min.js"></script>
 
-    <script src="../assets/js/main.js"></script>
+   <script src="../assets/owl-carousel/owl.carousel.js"></script>
+
+   <script src="../assets/js/main.js"></script>
 </body>
 </html>
