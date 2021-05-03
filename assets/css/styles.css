@@ -688,6 +688,7 @@ ul li {
 /*Footer*/
 .footer-wp {
   background: #0086c4;
+  position: relative;
 }
 
 .footer-wp .footer {
@@ -730,6 +731,23 @@ ul li {
   line-height: 1.5rem;
   font-size: 15px;
   font-weight: 500;
+}
+
+.footer-wp .footer .box-item {
+  margin-top: 25px;
+}
+
+.footer-wp .logo-congthuong {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 37px;
+  margin-right: 20px;
+}
+
+.footer-wp .logo-congthuong img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer-wp .copy-right {
@@ -891,6 +909,10 @@ ul li {
 }
 
 /*2. Form Login & Regiter*/
+.modal {
+  background-color: #00000052;
+}
+
 .modal-backdrop {
   display: none;
 }
@@ -2932,6 +2954,72 @@ ul li {
 
 .home-page #session-contact .contact-form .btn-hover::before {
   border-radius: 20px;
+}
+
+#modal-done .modal-dialog {
+  max-width: 800px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#modal-done .modal-dialog .modal-content {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#modal-done .modal-dialog .modal-content .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 5px 0 0 !important;
+  padding: 0 !important;
+  z-index: 2;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body {
+  padding: 4.5rem 1.5rem !important;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .header-title {
+  text-align: center;
+  font-weight: 600;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .text-center {
+  text-align: center;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .name-user {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 17px 0;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .italic {
+  font-style: italic;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .name-regis {
+  font-size: 23px;
+}
+
+#modal-done .modal-dialog .modal-content .modal-body .footer-done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 60px 5px 60px;
 }
 
 @media only screen and (max-width: 1024px) {

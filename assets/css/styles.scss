@@ -567,6 +567,8 @@ ul li {
 /*Footer*/
 .footer-wp {
     background: #0086c4;
+    position: relative;
+
     .footer {
         color: #ffffff;
         padding-bottom: 10px;
@@ -600,7 +602,23 @@ ul li {
                 }
             }
         }
+
+        .box-item {
+            margin-top: 25px;
+        }
     }
+
+    .logo-congthuong {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 37px;
+        margin-right: 20px;
+        img {
+            object-fit: contain;
+        }
+    }
+
     .copy-right {
         background: #e6e6e9f2;
         color: #0086c4;
@@ -733,6 +751,10 @@ ul li {
 }
 
 /*2. Form Login & Regiter*/
+.modal {
+    background-color: #00000052;
+}
+
 .modal-backdrop {
     display: none;
 }
@@ -2437,6 +2459,62 @@ ul li {
             .btn-hover {
                 &::before {
                     border-radius: 20px;
+                }
+            }
+        }
+    }
+}
+
+#modal-done {
+    .modal-dialog {
+        max-width: 800px!important;
+        display: flex;
+        justify-content: center;
+        .modal-content {
+            background-image: url('../images/bg.jpg');
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+
+            .icon-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0 5px 0 0!important;
+                padding: 0!important;
+                z-index: 2;
+            }
+
+            .modal-body {
+                padding: 4.5rem 1.5rem!important;
+                .header-title {
+                    text-align: center;
+                    font-weight: 600;
+                }
+                .text-center {
+                    text-align: center;
+                }
+                .name-user {
+                    font-size: 32px;
+                    font-weight: 600;
+                    padding: 17px 0;
+                }
+                .italic {
+                    font-style: italic;
+                }
+                // .text-blue {
+                //     color: #0086c4;
+                // }
+                .name-regis {
+                    font-size: 23px;
+                }
+
+                .footer-done {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 30px 60px 5px 60px;
                 }
             }
         }
