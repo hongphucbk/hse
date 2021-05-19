@@ -407,6 +407,11 @@ ul li {
   border-radius: 3px;
 }
 
+.item-scourse-wp .item .srource-info .box-scource-ft .money {
+  color: #0086c4;
+  font-size: 16px;
+}
+
 .item-scourse-wp .item .icon-scourse {
   z-index: 2;
   position: absolute;
@@ -1854,6 +1859,47 @@ ul li {
   width: 135px;
 }
 
+.modal-regiter-scource .modal-content .modal-body .form-info {
+  margin-top: 10px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form:last-child {
+  margin-bottom: 0;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form .w-40 {
+  width: 34%;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form .w-60 {
+  width: 66%;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form .w-full {
+  width: 100%;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form input {
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  padding: 3px 10px;
+}
+
+.modal-regiter-scource .modal-content .modal-body .form-info .item-form input:focus {
+  outline: none;
+}
+
 .modal-regiter-scource .modal-content .modal-footer {
   border-top: 0;
 }
@@ -3020,6 +3066,115 @@ ul li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px 60px 5px 60px;
+}
+
+.test-finish .session-test-finish {
+  min-height: calc(100vh - 263px);
+  margin-top: 30px;
+}
+
+.test-finish .session-test-finish .name-scourse {
+  font-size: 25px;
+}
+
+.test-finish .session-test-finish .name-scourse .fa-users-cog {
+  margin-right: 10px;
+}
+
+.test-finish .session-test-finish .header-test {
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.test-finish .session-test-finish .header-test .title {
+  font-size: 19px;
+}
+
+.test-finish .session-test-finish .content-test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar {
+  width: 22%;
+  border-radius: 5px;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar .wrapper {
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar .wrapper .item {
+  padding: 15px 20px;
+  border-bottom: 1px solid #d8d8d8;
+  cursor: pointer;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar .wrapper .item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar .wrapper .item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 0;
+}
+
+.test-finish .session-test-finish .content-test .test-sidebar .wrapper .active {
+  background-color: #3498db;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.test-finish .session-test-finish .content-test .test-content {
+  width: 75%;
+  height: 100%;
+}
+
+.test-finish .session-test-finish .content-test .test-content .item-content {
+  padding: 15px 20px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.test-finish .session-test-finish .content-test .test-content .item-content:last-child {
+  margin-bottom: 0;
+}
+
+.test-finish .session-test-finish .wp-btn-submit {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.test-finish .session-test-finish .wp-btn-submit .submit-test {
+  padding: 6px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.test-finish .session-test-finish .wp-btn-submit .btn-hover::before {
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 1024px) {
