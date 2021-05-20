@@ -1912,6 +1912,29 @@ ul li {
   font-size: 15px;
 }
 
+.menu-khoa-hoc .wrapp .menu-item {
+  border: 1px solid #d8d8d8;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.menu-khoa-hoc .wrapp .menu-item .title {
+  padding: 10px 15px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.menu-khoa-hoc .wrapp .menu-item .wp-item .item {
+  padding: 5px 30px;
+}
+
+.menu-khoa-hoc .wrapp .menu-item .wp-item .item:first-child {
+  padding-top: 15px;
+}
+
+.menu-khoa-hoc .wrapp .menu-item .wp-item .item:last-child {
+  padding-bottom: 15px;
+}
+
 .toast-regiter {
   width: 250px;
   background-color: #fff;
